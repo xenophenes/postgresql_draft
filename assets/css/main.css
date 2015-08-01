@@ -852,7 +852,9 @@
 	}
 
 	@media screen and (max-width: 736px) {
-
+		.mobile-pad{
+			padding: 40px 0 0;
+		}
 		.row > * {
 			padding: 20px 0 0 20px;
 		}
@@ -867,10 +869,6 @@
 
 		.row.uniform {
 			margin: -20px 0 -1px -20px;
-		}
-
-		.row.\32 00\25 > * {
-			padding: 40px 0 0 40px;
 		}
 
 		.row.\32 00\25 {
@@ -2478,10 +2476,6 @@
 			#main {
 				padding: 1em 20px 1em 20px;
 			}
-
-				#main > .row {
-					padding: 2em 0 2em 0;
-				}
 
 		/* Footer */
 
