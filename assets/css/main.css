@@ -1187,6 +1187,16 @@
 		color: rgb(102, 102, 102);
 	}
 
+/* Featured Sections */
+
+	.margin-1-bottom {
+		margin-bottom: 1em;
+	}
+
+  .feature {
+		text-align: center;
+	}
+
 /* Image */
 
 	.image {
@@ -1221,8 +1231,9 @@
 		}
 
     .image.featured img {
-			width: 7.5em;
-			height: 3em;
+			width: 42%;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 		.image.featured.second {
@@ -1230,7 +1241,7 @@
 			margin: 0 0 15em 0;
 		}
 
-		.image.featured.fontawesome {
+		.image.featured.image-section {
 			width: 0em;
 			height: 0em;
 			font-size: 8em;
