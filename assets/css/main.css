@@ -30,6 +30,11 @@
 		list-style: none;
 	}
 
+	.about.ul {
+		list-style-type: circle;
+		padding-left: 1.3em;
+	}
+
 	blockquote, q {
 		quotes: none;
 	}
@@ -39,9 +44,10 @@
 		content: none;
 	}
 
-	table {
+	table, th, td {
 		border-collapse: collapse;
-		border-spacing: 0;
+		border-spacing: 3em;
+		border: 1px solid black;
 	}
 
 	body {
