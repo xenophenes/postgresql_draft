@@ -118,6 +118,10 @@
 	}
 
 	@media screen and (min-width: 737px) and (max-width: 1200px) {
+		/* Calendar Box */
+		.calendarBox, .calendarBoxAlt {
+			height: 5em !important;
+		}
 
 		.container.\31 25\25 {
 			width: 100%;
@@ -1794,7 +1798,6 @@
 /* Desktop */
 
 	@media screen and (min-width: 737px) {
-
 		/* Basic */
 
 			h1, h2, h3, h4, h5, h6 {
@@ -2278,7 +2281,6 @@
 	}
 
 	@media screen and (max-width: 850px) {
-
 		/* Basic */
 
 			html, body {
