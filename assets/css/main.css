@@ -1203,12 +1203,12 @@
 
 	.releaseBox {
 		background-color: #eee;
-		height: 25px;
+		height: 2em;
 	}
 
-	.releaseBoxBlack {
-		background-color: #000;
-		height: 25px;
+	.releaseBoxAlt {
+		background-color: #fff;
+		height: 2em;
 	}
 
 /* Image */
