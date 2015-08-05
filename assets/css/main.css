@@ -1689,9 +1689,14 @@
 
 	#main-wrapper {
 		background: #fff;
+		border-top: 5px solid #336791;
 		border-bottom: solid 5px rgb(102, 102, 102);
 	}
 
+	#main-wrapper-about {
+		background: #fff;
+		border-bottom: solid 5px rgb(102, 102, 102);
+	}
 /* Banner */
 
 	#banner {
