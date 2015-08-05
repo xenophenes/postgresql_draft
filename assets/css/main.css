@@ -1128,7 +1128,7 @@
 
 	a {
 		color: #006376;
-		text-decoration: underline;
+		text-decoration: none;
 	}
 
 		a:hover {
@@ -2060,16 +2060,16 @@
 						outline: 0;
 					}
 
-					#nav li:hover, #nav li.active {
+					#nav a li:hover, #nav li.active {
 						top: 3px;
 					}
 
-					#nav li:hover a, #nav li:hover span {
+					#nav li:hover a {
 						background: #264d6d;
 						color: #fff;
 					}
 
-					#nav li.active a, #nav li.active span {
+					#nav li.active a {
 						background: #264d6d;
 						color: #fff;
 					}
@@ -2077,6 +2077,10 @@
 					#nav li.current a {
 						background: #336791;
 						color: #fff;
+					}
+					.header img {
+						width: 2em;
+					  vertical-align: middle;
 					}
 
 			.dropotron {
@@ -2273,7 +2277,7 @@
 		display: none;
 	}
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 850px) {
 
 		/* Basic */
 
