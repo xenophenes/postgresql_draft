@@ -1201,6 +1201,16 @@
 		text-align: center;
 	}
 
+	.releaseBox {
+		background-color: #eee;
+		height: 25px;
+	}
+
+	.releaseBoxBlack {
+		background-color: #000;
+		height: 25px;
+	}
+
 /* Image */
 
 	.image {
@@ -1840,7 +1850,7 @@
 				text-align: center;
 			}
 
-			.box.feature > p {
+			.box.feature > div {
 				height: 200px;
 
 			}
