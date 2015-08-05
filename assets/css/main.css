@@ -1211,6 +1211,16 @@
 		height: 2em;
 	}
 
+	.calendarBox {
+		background-color: #eee;
+		height: 4.1em;
+	}
+
+	.calendarBoxAlt {
+		background-color: #fff;
+		height: 4.1em;
+	}
+
 /* Image */
 
 	.image {
