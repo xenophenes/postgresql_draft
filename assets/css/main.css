@@ -1128,7 +1128,7 @@
 
 	a {
 		color: #006376;
-		text-decoration: underline;
+		text-decoration: none;
 	}
 
 		a:hover {
@@ -2273,7 +2273,7 @@
 		display: none;
 	}
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 850px) {
 
 		/* Basic */
 
