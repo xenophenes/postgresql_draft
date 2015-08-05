@@ -1247,6 +1247,10 @@
 			display: inline-block;
 		}
 
+    .image.featured.header img{
+			width: 2em;
+		}
+
     .image.featured img {
 			width: 42%;
 			margin-left: auto;
