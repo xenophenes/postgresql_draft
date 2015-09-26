@@ -1380,6 +1380,10 @@
 		margin-top: 2.35em;
 	}
 
+	ul.divided-right > li {
+		border-right: 2px solid #E7EAE8;
+	}
+
 		ul.divided > li:first-child {
 			border-top: 0;
 			padding-top: 0;
