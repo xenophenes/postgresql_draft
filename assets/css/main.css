@@ -1447,8 +1447,8 @@
 					background-color: #2DAAE4;
 				}
 
-				ul.contact li:hover a.fa-dribbble {
-					background-color: #C4376B;
+				ul.contact li:hover a.fa-github {
+					background-color: #000;
 				}
 
 				ul.contact li:hover a.fa-linkedin {
