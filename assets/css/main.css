@@ -2336,6 +2336,9 @@
 				margin: 0;
 			}
 
+			.image.featured img {
+				width: 45.7%;
+			}
 	}
 
 /* Mobile */
