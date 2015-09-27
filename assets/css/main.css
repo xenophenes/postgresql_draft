@@ -2727,5 +2727,8 @@
 				-ms-transform: translateX(0);
 				transform: translateX(0);
 			}
+			ul.divided-right > li {
+				border-right: 0;
+			}
 
 	}
