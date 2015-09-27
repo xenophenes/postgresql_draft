@@ -1121,7 +1121,7 @@
 
 	h2.major {
 		position: relative;
-		border-top: solid 5px #e7eae8;
+		/*border-top: solid 5px #e7eae8;*/
 	}
 
 		h2.major span {
@@ -2738,9 +2738,11 @@
 
 	h2.major.no-margin {
 		margin: 0;
+		text-align: center;
 	}
 
 	.planetPostgresqlGlobe {
+		padding: 0px .2em 0px 0px;
 		text-align: center;
 		font-size: 5em;
 		margin-bottom: 15px;
