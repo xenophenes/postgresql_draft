@@ -1121,7 +1121,7 @@
 
 	h2.major {
 		position: relative;
-		border-top: solid 5px #e7eae8;
+		/*border-top: solid 5px #e7eae8;*/
 	}
 
 		h2.major span {
