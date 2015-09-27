@@ -1121,7 +1121,7 @@
 
 	h2.major {
 		position: relative;
-		/*border-top: solid 5px #e7eae8;*/
+		border-top: solid 5px #e7eae8;
 	}
 
 		h2.major span {
@@ -2808,6 +2808,10 @@
 			}
 			ul.divided-right > li {
 				border-right: 0;
+			}
+			
+			h2.major {
+				border: 0;
 			}
 
 	}
