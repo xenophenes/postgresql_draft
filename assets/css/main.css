@@ -2732,3 +2732,13 @@
 			}
 
 	}
+
+	h2.major.no-margin {
+		margin: 0;
+	}
+
+	.planetPostgresqlGlobe {
+		text-align: center;
+		font-size: 5em;
+		margin-bottom: 15px;
+	}
