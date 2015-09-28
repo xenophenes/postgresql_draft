@@ -1381,7 +1381,7 @@
 	}
 
 	ul.divided-right > li {
-		border-right: 2px solid #E7EAE8;
+		
 	}
 
 		ul.divided > li:first-child {
@@ -1920,6 +1920,18 @@
 				line-height: 1em;
 			}
 
+			.box.post-centered h3 {
+				line-height: 1em;
+				margin: 0 0 0.75em 0;
+				text-align: center;
+			}
+
+			.box.post-centered .meta {
+				margin: 0;
+				line-height: 1em;
+				text-align: center;
+			}
+
 			.box.page-content header {
 				margin: 0 0 2.5em 0;
 			}
@@ -1963,6 +1975,10 @@
 
 			.content-right {
 				padding-left: 2em;
+			}
+
+			.content-centered {
+				padding: 0 0 0 0;
 			}
 
 		/* Wrappers */
@@ -2741,4 +2757,5 @@
 		text-align: center;
 		font-size: 5em;
 		padding: 0 0 1em 0;
+		color: rgb(102,102,102);
 	}
