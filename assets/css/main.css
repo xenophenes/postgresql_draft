@@ -1309,6 +1309,7 @@
 		font-weight: 700;
 		text-transform: uppercase;
 		text-decoration: none;
+		text-align: center;
 		background: #336791;
 		color: #fff;
 		border: 0;
@@ -1368,10 +1369,6 @@
 			input[type="reset"].planetPostgresql,
 			button.planetPostgresql,
 			.button.planetPostgresql {
-				text-align: center;
-				display: block;
-				margin: 4em auto 0 auto;
-				width: 100%;
 				background: rgb(102, 102, 102);
 			}
 
@@ -1390,6 +1387,13 @@
 			.button.planetPostgresql:active {
 				background: #000;
 			}
+
+			.button.planetPostgresql-container {
+				text-align: center;
+				display: block;
+				width: 20%;
+				margin: 0 auto;
+		  }
 
 /* List */
 
@@ -2398,6 +2402,22 @@
 				text-align: center;
 			}
 
+			input[type="button"],
+			input[type="submit"],
+			input[type="reset"],
+			button,
+			.button.planetPostgresql {
+				font-size: 1.5em;
+				width: 100%;
+				padding: 0.75em 0 0.75em 0;
+				margin-top: 0.5em;
+				text-align: center;
+			}
+
+			.button.planetPostgresql-container {
+				width: 100%;
+			}
+
 		/* List */
 
 			ul.special li {
@@ -2797,5 +2817,5 @@
 		text-align: center;
 		font-size: 5em;
 		padding: 0 0 1em 0;
-		color: rgb(102,102,102);
+		color: #336791;
 	}
