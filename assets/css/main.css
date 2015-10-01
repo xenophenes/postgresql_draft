@@ -1075,6 +1075,9 @@
 			margin-left: 8.33333%;
 		}
 
+		.box.post h3, .box.post .meta{
+			text-align: center;
+		}
 	}
 
 /* Basic */
@@ -2879,7 +2882,6 @@
 	}
 
 	.planetPostgresqlGlobe {
-		padding: 0px .2em 0px 0px;
 		text-align: center;
 		font-size: 5em;
 		color: #336791;
