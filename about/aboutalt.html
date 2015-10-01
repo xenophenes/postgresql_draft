@@ -8,7 +8,19 @@
 		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+		<script language="javascript" type="text/javascript" src="../assets/js/main.js"></script>
 		<script language="javascript" type="text/javascript" src="../assets/js/util.js"></script>
+		<script language="javascript" type="text/javascript">
+			// When the DOM is ready, run this function
+			$(document).ready(function() {
+				//Set the carousel options
+				$('#quote-carousel').carousel({
+					pause: true,
+					interval: 4000,
+				});
+			});
+		</script>
+
 	</head>
 	<body>
 		<div id="logo" style="display:none;">Postgresql</div>
