@@ -3,27 +3,22 @@
 <html>
 	<head>
 		<title>PostgreSQL - About</title>
-		<script language="javascript" type="text/javascript" src="../assets/js/jquery.min.js"></script>
-		<script language="javascript" type="text/javascript" src="../assets/js/jquery.dropotron.min.js"></script>
-		<script language="javascript" type="text/javascript" src="../assets/js/main.js"></script>
-		<script language="javascript" type="text/javascript" src="../assets/js/util.js"></script>
-		<script language="javascript" type="text/javascript" src="../assets/js/skel.min.js"></script>
-		<script language="javascript" type="text/javascript" src="../assets/js/skel-viewport.min.js"></script>
-		<script language="javascript" type="text/javascript">
-			// When the DOM is ready, run this function
-			$(document).ready(function() {
-				//Set the carousel options
-				$('#quote-carousel').carousel({
-					pause: true,
-					interval: 4000,
-				});
-			});
-		</script>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/jcarousel.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jcarousel.min.js"></script>
+		<script>
+		(function($) {
+		    $(function() {
+		        $('.jcarousel').jcarousel();
+		     });
+		})(jQuery);
+
+		</script>
 	</head>
 	<body>
 		<div id="logo" style="display:none;">Postgresql</div>
@@ -116,62 +111,22 @@
                         <h3 class="major"><span>Our users <i class="fa fa-heart"></i> us</span></h3>
 												<!-- Head tags to include FontAwesome -->
 
-												<div class="container alt">
-												  <div class="row">
-												    <div class="col-md-offset-2 col-md-8">
-												      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-												        <!-- Bottom Carousel Indicators -->
-												        <ol class="carousel-indicators">
-												          <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
-												          <li data-target="#quote-carousel" data-slide-to="1"></li>
-												          <li data-target="#quote-carousel" data-slide-to="2"></li>
-												        </ol>
+												<div class="jcarousel-wrapper">
+						                <div class="jcarousel">
+						                    <ul>
+						                        <li>test</li>
+						                        <li>test1</li>
+						                        <li>test2</li>
+						                    </ul>
+						                </div>
 
-												        <!-- Carousel Slides / Quotes -->
-												        <div class="carousel-inner">
+						                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+						                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
 
-												          <!-- Quote 1 -->
-												          <div class="item active">
-												            <blockquote>
-												              <div class="row">
-												                <div class="col-sm-9">
-												                  <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
-												                  <small>Someone famous</small>
-												                </div>
-												              </div>
-												            </blockquote>
-												          </div>
-												          <!-- Quote 2 -->
-												          <div class="item">
-												            <blockquote>
-												              <div class="row">
-												                <div class="col-sm-9">
-												                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
-												                  <small>Someone famous</small>
-												                </div>
-												              </div>
-												            </blockquote>
-												          </div>
-												          <!-- Quote 3 -->
-												          <div class="item">
-												            <blockquote>
-												              <div class="row">
-												                <div class="col-sm-9">
-												                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.</p>
-												                  <small>Someone famous</small>
-												                </div>
-												              </div>
-												            </blockquote>
-												          </div>
-												        </div>
+						                <p class="jcarousel-pagination">
 
-												        <!-- Carousel Buttons Next/Prev -->
-												        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
-												        <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
-												      </div>
-												    </div>
-												  </div>
-												</div>
+						                </p>
+						            </div>
                       <section>
                         <h3 class="major"><span>Stats for the Analytically Minded</span></h3>
 												<p>
@@ -235,13 +190,11 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/skel-viewport.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/skel-viewport.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
 	</body>
 </html>
