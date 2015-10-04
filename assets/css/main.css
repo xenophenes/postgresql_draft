@@ -2537,7 +2537,7 @@
 			.box.highlight h2 {
 				font-size: 2.25em;
 				line-height: 1.25em;
-				margin: 2em 0 0.5em 0;
+				margin: 1.5em 0 0.5em 0;
 			}
 
 			.box.highlight header > p {
@@ -2589,7 +2589,7 @@
 			}
 
 			.box.page-content header {
-				margin: 0 0 3em 0;
+				margin: 1.5em 0 3em 0;
 			}
 
 		/* Sidebar + Content */
