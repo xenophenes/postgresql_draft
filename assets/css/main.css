@@ -1204,7 +1204,7 @@
 
 	blockquote {
 		border-left: solid 5px #E7EAE8;
-		padding: 1em 0 1em 1.5em;
+		padding: 1em 4em 3em .5em;
 		font-style: italic;
 	}
 
@@ -2906,7 +2906,7 @@
 	}
 
 	.jcarousel li {
-		margin-left: 40px;
+		margin-left: 10px;
 	}
 
 	.jcarousel blockquote {
