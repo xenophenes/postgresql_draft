@@ -11,52 +11,7 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
 		<script src="../assets/js/jquery.min.js"></script>
 		<script src="../assets/js/jcarousel.min.js"></script>
-		<script>
-		(function($) {
-		    $(function() {
-		        var jcarousel = $('.jcarousel');
-
-		        jcarousel
-		            .on('jcarousel:reload jcarousel:create', function () {
-		                var carousel = $(this),
-		                    width = carousel.innerWidth() - 40;
-
-		                carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
-		            })
-		            .jcarousel({
-		                wrap: 'circular'
-		            });
-
-		        $('.jcarousel-control-prev')
-		            .jcarouselControl({
-		                target: '-=1'
-		            });
-
-		        $('.jcarousel-control-next')
-		            .jcarouselControl({
-		                target: '+=1'
-		            });
-
-		        $('.jcarousel-pagination')
-		            .on('jcarouselpagination:active', 'a', function() {
-		                $(this).addClass('active');
-		            })
-		            .on('jcarouselpagination:inactive', 'a', function() {
-		                $(this).removeClass('active');
-		            })
-		            .on('click', function(e) {
-		                e.preventDefault();
-		            })
-		            .jcarouselPagination({
-		                perPage: 1,
-		                item: function(page) {
-		                    return '<a href="#' + page + '">' + page + '</a>';
-		                }
-		            });
-		    });
-		})(jQuery);
-
-		</script>
+		<script src="../assets/js/jcarousel-responsive.js"></script>
 	</head>
 	<body>
 		<div id="logo" style="display:none;">Postgresql</div>
