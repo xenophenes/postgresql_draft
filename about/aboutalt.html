@@ -14,8 +14,46 @@
 		<script>
 		(function($) {
 		    $(function() {
-		        $('.jcarousel').jcarousel();
-		     });
+		        var jcarousel = $('.jcarousel');
+
+		        jcarousel
+		            .on('jcarousel:reload jcarousel:create', function () {
+		                var carousel = $(this),
+		                    width = carousel.innerWidth() - 40;
+
+		                carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
+		            })
+		            .jcarousel({
+		                wrap: 'circular'
+		            });
+
+		        $('.jcarousel-control-prev')
+		            .jcarouselControl({
+		                target: '-=1'
+		            });
+
+		        $('.jcarousel-control-next')
+		            .jcarouselControl({
+		                target: '+=1'
+		            });
+
+		        $('.jcarousel-pagination')
+		            .on('jcarouselpagination:active', 'a', function() {
+		                $(this).addClass('active');
+		            })
+		            .on('jcarouselpagination:inactive', 'a', function() {
+		                $(this).removeClass('active');
+		            })
+		            .on('click', function(e) {
+		                e.preventDefault();
+		            })
+		            .jcarouselPagination({
+		                perPage: 1,
+		                item: function(page) {
+		                    return '<a href="#' + page + '">' + page + '</a>';
+		                }
+		            });
+		    });
 		})(jQuery);
 
 		</script>
@@ -110,23 +148,42 @@
 
                         <h3 class="major"><span>Our users <i class="fa fa-heart"></i> us</span></h3>
 												<!-- Head tags to include FontAwesome -->
+												<div class="12u">
+													<div class="jcarousel-wrapper">
+							                <div class="jcarousel">
+							                    <ul>
+																		<!-- Quote 1 -->
+																		<li>
+																			<blockquote>
+											                  <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+											                  <small>Someone famous</small>
+																			</blockquote>
+																		</li>
+													          <!-- Quote 2 -->
+																		<li>
+														            <blockquote>
+												                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+												                  <small>Someone famous</small>
+														            </blockquote>
+																	  </li>
+													          <!-- Quote 3 -->
+																		<li>
+													            <blockquote>
+											                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.</p>
+											                  <small>Someone famous</small>
+													            </blockquote>
+																	  </li>
+							                    </ul>
+							                </div>
 
-												<div class="jcarousel-wrapper">
-						                <div class="jcarousel">
-						                    <ul>
-						                        <li>test</li>
-						                        <li>test1</li>
-						                        <li>test2</li>
-						                    </ul>
-						                </div>
+							                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+							                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
 
-						                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
-						                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+							                <p class="jcarousel-pagination">
 
-						                <p class="jcarousel-pagination">
-
-						                </p>
-						            </div>
+							                </p>
+							            </div>
+												</div>
                       <section>
                         <h3 class="major"><span>Stats for the Analytically Minded</span></h3>
 												<p>
