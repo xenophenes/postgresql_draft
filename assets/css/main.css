@@ -1093,6 +1093,7 @@
 
 		.box.post h3, .box.post .meta,
 		.box.post-summary h3, .box.post-summary .meta,
+		.box.post-centered h3, .box.post-centered .meta,
 		#footer section, #footer .major  {
 			text-align: center;
 		}
