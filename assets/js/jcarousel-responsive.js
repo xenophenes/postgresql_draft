@@ -5,7 +5,7 @@
         jcarousel
             .on('jcarousel:reload jcarousel:create', function () {
                 var carousel = $(this),
-                    width = carousel.innerWidth() - 40;
+                    width = carousel.innerWidth() - 10;
 
                 carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
             })

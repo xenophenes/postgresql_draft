@@ -1093,6 +1093,7 @@
 
 		.box.post h3, .box.post .meta,
 		.box.post-summary h3, .box.post-summary .meta,
+		.box.post-centered h3, .box.post-centered .meta,
 		#footer section, #footer .major  {
 			text-align: center;
 		}
@@ -1204,7 +1205,7 @@
 
 	blockquote {
 		border-left: solid 5px #E7EAE8;
-		padding: 1em 0 1em 1.5em;
+		padding: 1em 4em 3em .5em;
 		font-style: italic;
 	}
 
@@ -1888,7 +1889,7 @@
 
 					h2.major span {
 						top: -0.775em;
-						padding: 0 1.5em 0 1.5em;
+						padding: 0 1.5em 1.5em 1.5em;
 					}
 
 				h3.major {
@@ -2057,6 +2058,7 @@
 
 					.sidebar h2.major span {
 						padding-left: 0;
+						padding-bottom: 0;
 					}
 
 			.content-left {
@@ -2537,7 +2539,7 @@
 			.box.highlight h2 {
 				font-size: 2.25em;
 				line-height: 1.25em;
-				margin: 0 0 0.5em 0;
+				margin: 1.5em 0 0.5em 0;
 			}
 
 			.box.highlight header > p {
@@ -2589,7 +2591,7 @@
 			}
 
 			.box.page-content header {
-				margin: 0 0 3em 0;
+				margin: 1.5em 0 3em 0;
 			}
 
 		/* Sidebar + Content */
@@ -2906,7 +2908,7 @@
 	}
 
 	.jcarousel li {
-		margin-left: 40px;
+		margin-left: 10px;
 	}
 
 	.jcarousel blockquote {

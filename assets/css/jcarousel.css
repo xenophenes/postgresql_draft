@@ -1,5 +1,5 @@
 .jcarousel-wrapper {
-    margin: 20px auto;
+    margin: 20px auto 3em auto;
     position: relative;
     border: 10px solid #fff;
     -webkit-border-radius: 5px;
@@ -51,7 +51,7 @@
     width: 30px;
     height: 30px;
     text-align: center;
-    background: #4E443C;
+    background: #336791;
     color: #fff;
     text-decoration: none;
     text-shadow: 0 0 1px #000;
