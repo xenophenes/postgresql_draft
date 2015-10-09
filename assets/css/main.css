@@ -2901,6 +2901,10 @@
 		text-align: center;
 	}
 
+  .box.features.no-margin {
+		margin: 0;
+	}
+
 	.planetPostgresqlGlobe {
 		text-align: center;
 		font-size: 5em;
@@ -2922,6 +2926,10 @@
 	    margin-right: 10px;
 	}
 
-	.aboutAltGrid span div{
+	.aboutAltGrid span div {
 		background: rgb(102,102,102);
+	}
+
+  section.box.feature *{
+		color: #fff;
 	}
