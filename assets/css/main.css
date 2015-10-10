@@ -1292,6 +1292,7 @@
 
 		.image.featured {
 			display: inline-block;
+			max-width: 17.1em;
 		}
 
     .image.featured img {
