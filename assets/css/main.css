@@ -2441,7 +2441,7 @@
 			}
 
 			h3.major {
-				text-align: left;
+				text-align: center;
 				margin: 0.775em 0 0.75em 0;
 			}
 
@@ -2454,7 +2454,8 @@
 
 			section, article {
 				clear: both;
-				margin: 0 0 2.5em 0 !important;
+				margin: 0 0 4em 0 !important;
+				text-align: center;
 			}
 
 			header p {
@@ -2580,6 +2581,7 @@
 				font-size: 2.25em;
 				line-height: 1.25em;
 				margin: 0 0 0.5em 0;
+				text-align: center;
 			}
 
 			.box.page-content header > p {
@@ -2883,10 +2885,15 @@
 
 			h2.major {
 				border: 0;
+				text-align: center;
 			}
 
 			h3.major {
 				border: 0;
+			}
+
+			ol, ul, li {
+				list-style: none;
 			}
 
 	}
