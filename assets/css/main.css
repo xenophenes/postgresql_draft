@@ -1261,6 +1261,22 @@
 		height: 4.1em;
 	}
 
+	.contributorFaux {
+		background-color: #336791;
+		border-bottom: #fff;
+	}
+
+	.contributorRightBox p {
+		margin-bottom: 0;
+		margin-left: 15px;
+	}
+
+	@media screen and (max-width: 736px) {
+		.contributorRightBox p {
+			margin-left: 0;
+		}
+	}
+
 /* Image */
 
 	.image {
@@ -2954,14 +2970,4 @@
 		background-color: #fff;
 		color: rgb(102,102,112);
 		padding-top: 0 !important;
-	}
-
-	.contributorRightBox p {
-		margin-bottom: 0;
-		margin-left: 15px;
-	}
-
-	.contributorFaux {
-		background-color: #336791;
-		border-bottom: #fff;
 	}
