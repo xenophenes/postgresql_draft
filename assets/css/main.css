@@ -2943,3 +2943,25 @@
 		color: #fff;
 		text-align: center;
 	}
+
+	.contributorLeftBox {
+		background-color: #336791;
+		border-color: #336791;
+		color: #fff;
+  }
+
+	.contributorRightBox {
+		background-color: #fff;
+		color: rgb(102,102,112);
+		padding-top: 0 !important;
+	}
+
+	.contributorRightBox p {
+		margin-bottom: 0;
+		margin-left: 15px;
+	}
+
+	.contributorFaux {
+		background-color: #336791;
+		border-bottom: #fff;
+	}
