@@ -2237,7 +2237,12 @@
 						width: 2em;
 					  vertical-align: middle;
 					}
-
+					.header.images img {
+						width: 1.2em;
+						margin: -10px 0 0 10px;
+						vertical-align: middle;
+					}
+					
 			.dropotron {
 				background: rgb(102,102,102);
 				color: #fff;
@@ -2622,6 +2627,12 @@
 				line-height: 1.25em;
 				margin: 0 0 0.5em 0;
 				text-align: center;
+			}
+
+			.box.page-content img {
+				width: 1.2em;
+				margin: -10px 0 0 10px;
+				vertical-align: middle;
 			}
 
 			.box.page-content header > p {
