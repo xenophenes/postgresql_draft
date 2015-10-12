@@ -1272,13 +1272,26 @@
 		min-height: 5em;
 	}
 
+	.contributorRightBoxAlt p {
+		margin-bottom: 0;
+		margin-left: 15px;
+		min-height: 5em;
+	}
+
 	@media screen and (max-width: 736px) {
 		.contributorRightBox p {
+			margin-left: 0;
+		}
+
+		.contributorRightBoxAlt p {
 			margin-left: 0;
 		}
 	}
 	@media screen and (min-width: 737px) and (max-width: 850px) {
 		.contributorRightBox p {
+			margin-left: 0;
+		}
+		.contributorRightBoxAlt p {
 			margin-left: 0;
 		}
 		.contributorFaux {
@@ -2977,7 +2990,13 @@
   }
 
 	.contributorRightBox {
-		background-color: #fff;
+		background-color: #F2FBFE;
+		color: rgb(102,102,112);
+		padding-top: 0 !important;
+	}
+
+	.contributorRightBoxAlt {
+		background-color: #CCE9F3;
 		color: rgb(102,102,112);
 		padding-top: 0 !important;
 	}
