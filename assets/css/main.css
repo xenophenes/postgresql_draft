@@ -3015,3 +3015,15 @@
 	.contributorBox {
 		margin-bottom: 2em;
 	}
+
+	.styledSelect, .styledInput {
+   width: 100%;
+   height: 34px;
+   overflow: hidden;
+   background-color: #ddd;
+   border: 1px solid #ccc;
+	}
+
+	.mailListSubmit {
+		float: right;
+	}
