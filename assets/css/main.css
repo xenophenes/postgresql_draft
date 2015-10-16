@@ -3027,3 +3027,7 @@
 	.mailListSubmit {
 		float: right;
 	}
+
+	form[name="searchMailingList"] {
+		margin-bottom: 15px;
+	}
