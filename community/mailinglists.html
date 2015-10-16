@@ -69,41 +69,55 @@
 											</header>
 
                       <section>
-                        <h3 class="major"><span>Subscribe</span></h3>
-                        <div class="row 50%">
-                          <div class="2u">
-                            <h3>Select A List...</h3>
+                        <form action="subscribe" name="subscribe" method="POST">
+                          <h3 class="major"><span>Subscribe</span></h3>
+                          <div class="row 50%">
+                            <div class="2u">
+                              <h3>Select A List...</h3>
+                            </div>
+                            <div class="10u">
+                              <select class="styledSelect" name="test">
+                                <option value="Test">Test</option>
+                              </select>
+                            </div>
                           </div>
-                          <div class="10u">
-                            <select class="styledSelect" name="test">
-                              <option value="Test">Test</option>
-                            </select>
-                          </div>
+                          <div class="row 50%">
+                            <div class="9u">
+                              <input type="text" name="email" class="styledInput" />
+                           </div>
+                           <div class="1u"></div>
+                           <div class="2u">
+                             <h3>Enter your Email...</h3>
+                           </div>
                         </div>
                         <div class="row 50%">
                           <div class="9u">
-                            <input type="text" name="email" class="styledInput" />
-                         </div>
-                         <div class="1u"></div>
-                         <div class="2u">
-                           <h3>Enter your Email...</h3>
+                            <h3>And You're Done.</h3>
+                            <small>Please read our archive policy before posting.</small>
+                          </div>
+                          <div class="3u">
+                            <input type="submit" value="Submit" class="mailListSubmit"/>
                          </div>
                       </div>
-                      <div class="row 50%">
-                        <div class="9u">
-                          <h3>And You're Done.</h3>
-                          <small>Please read our archive policy before posting.</small>
-                        </div>
-                        <div class="3u">
-                          <input type="submit" value="Submit" class="mailListSubmit"/>
-                       </div>
-                    </div>
+                    </form>
 								  </section>
                   <section>
                     <h3 class="major"><span>Search</span></h3>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div class="row 50%">
+                      <div class="12u">
+                        <p>Before posting to a list, you can search below to see if a question has already been answered.</p>
+                      </div>
+                    </div>
+                    <form action="searchMailingList" name="searchMailingList">
+                      <div class="row 50%">
+                        <div class="9u">
+                          <input type="text" name="email" class="styledInput" />
+                        </div>
+                        <div class="3u">
+                          <input type="submit" value="Submit" class="mailListSubmit"/>
+                        </div>
+                      </div>
+                  </form>
                   </section>
                   <section>
                     <h3 class="major"><span>Our Lists</span></h3>
