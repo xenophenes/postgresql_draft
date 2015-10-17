@@ -108,11 +108,13 @@ body {
 }
 
 .color {
-	background-color: #f2fbfe;
+	background-color: #fff;
+	padding: 0 0 3em 0;
 }
 
 .coloralt {
-	background-color: #cce9f3;
+	background-color: #f6f6f6;
+	padding: 0 0 3em 0;
 }
 
 @media screen and (min-width: 737px) {
