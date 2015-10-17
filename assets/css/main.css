@@ -107,6 +107,14 @@ body {
 	margin-right: 10px;
 }
 
+.color {
+	background-color: #f2fbfe;
+}
+
+.coloralt {
+	background-color: #cce9f3;
+}
+
 @media screen and (min-width: 737px) {
 
 	.container.\31 25\25 {
@@ -3020,8 +3028,8 @@ section.box.feature-grid *{
 	width: 100%;
 	height: 34px;
 	overflow: hidden;
-	background-color: #ddd;
-	border: 1px solid #ccc;
+	background-color: #fff;
+	border: 1px dotted #336791;
 }
 
 .mailListSubmit {
