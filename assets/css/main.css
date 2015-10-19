@@ -2947,6 +2947,14 @@ table.default thead {
 		list-style: none;
 	}
 
+	input[type="button"].alt,
+	input[type="submit"].alt,
+	input[type="reset"].alt,
+	button.alt,
+	.button.alt {
+		background: #336791 none repeat scroll 0% 0%;
+	}
+
 }
 
 h2.major.no-margin {
