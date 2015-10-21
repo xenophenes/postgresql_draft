@@ -1271,12 +1271,10 @@ header > p {
 	height: 4.1em;
 }
 
-/*
 .contributorFaux {
 	background-color: #336791;
 	border-bottom: #fff;
 }
-*/
 
 .contributorRightBox p {
 	margin-bottom: 0;
@@ -3014,12 +3012,9 @@ section.box.feature-grid *{
 }
 
 .contributorLeftBox {
-<<<<<<< HEAD
 	background-color: #336791;
-=======
 	background-color: #fff;
 	border: 1px solid #666;
->>>>>>> ff5bbcc3a559eba46168d6deb7a1660a9b01dc4a
 }
 
 .contributorRightBox {
@@ -3028,11 +3023,7 @@ section.box.feature-grid *{
 }
 
 .contributorRightBoxAlt {
-<<<<<<< HEAD
 	background-color: #e7eae8;
-=======
-	background-color: #cce9f3;
->>>>>>> ff5bbcc3a559eba46168d6deb7a1660a9b01dc4a
 	color: #666670;
 	padding-top: 0 !important;
 }
