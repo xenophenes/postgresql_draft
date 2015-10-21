@@ -3014,11 +3014,6 @@ h3.major.no-margin {
 section.box.feature-grid *{
 	color: #fff;
 	text-align: center;
-}
-
-section.box.feature-grid.contributors *{
-	color: #fff;
-	text-align: center;
 	padding: 0 0 1.6em 0;
 }
 
