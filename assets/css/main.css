@@ -2505,10 +2505,14 @@ table.default thead {
 
 	/* Section/Article */
 
-	section, article {
+	section.box.feature, article.box.feature {
 		clear: both;
 		margin: 0 0 4em 0 !important;
 		text-align: center;
+	}
+
+	section.box.feature-grid {
+		margin-bottom: 1em;
 	}
 
 	header p {
@@ -3019,13 +3023,11 @@ section.box.feature-grid *{
 .contributorRightBox {
 	background-color: #F2FBFE;
 	color: rgb(102,102,112);
-	padding-top: 0 !important;
 }
 
 .contributorRightBoxAlt {
 	background-color: #CCE9F3;
 	color: rgb(102,102,112);
-	padding-top: 0 !important;
 }
 
 .contributorBox {
@@ -3095,3 +3097,4 @@ label:before {
     width:20px; height:20px;
     background:#f8f8f8;
     position:absolute;
+}
