@@ -2507,14 +2507,10 @@ table.default thead {
 
 	/* Section/Article */
 
-	section.box.feature, article.box.feature {
+	section, article {
 		clear: both;
 		margin: 0 0 4em 0 !important;
 		text-align: center;
-	}
-
-	section.box.feature-grid {
-		margin: 0 0 1em 0;
 	}
 
 	header p {
@@ -3012,13 +3008,18 @@ h3.major.no-margin {
 }
 
 section.box.feature-grid *{
-	color: #fff;
+	color: #666;
 	text-align: center;
 	padding: 0 0 1.6em 0;
 }
 
 .contributorLeftBox {
+<<<<<<< HEAD
 	background-color: #336791;
+=======
+	background-color: #fff;
+	border: 1px solid #666;
+>>>>>>> ff5bbcc3a559eba46168d6deb7a1660a9b01dc4a
 }
 
 .contributorRightBox {
@@ -3027,7 +3028,11 @@ section.box.feature-grid *{
 }
 
 .contributorRightBoxAlt {
+<<<<<<< HEAD
 	background-color: #e7eae8;
+=======
+	background-color: #cce9f3;
+>>>>>>> ff5bbcc3a559eba46168d6deb7a1660a9b01dc4a
 	color: #666670;
 	padding-top: 0 !important;
 }
