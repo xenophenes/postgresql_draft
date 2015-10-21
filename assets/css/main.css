@@ -3012,7 +3012,8 @@ section.box.feature-grid *{
 }
 
 .contributorLeftBox {
-	background-color: #336791;
+	background-color: #fff;
+	border: 1px solid #666;
 }
 
 .contributorRightBox {
