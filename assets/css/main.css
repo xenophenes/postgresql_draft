@@ -1285,7 +1285,7 @@ header > p {
 }
 
 .contributorRightBoxAlt p {
-	margin-bottom: 0;
+	margin-bottom: 1em;
 	margin-left: 15px;
 	min-height: 5em;
 }
@@ -1305,10 +1305,6 @@ header > p {
 	}
 	.contributorRightBoxAlt p {
 		margin-left: 0;
-	}
-	.contributorFaux {
-		background-color: #fff;
-		border-bottom: #fff;
 	}
 }
 
@@ -3033,7 +3029,6 @@ section.box.feature-grid.contributors *{
 .contributorRightBox {
 	background-color: #fff;
 	color: #666670;
-	padding-top: 0 !important;
 }
 
 .contributorRightBoxAlt {
