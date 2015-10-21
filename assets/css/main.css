@@ -3023,11 +3023,13 @@ section.box.feature-grid *{
 .contributorRightBox {
 	background-color: #F2FBFE;
 	color: rgb(102,102,112);
+	padding-top: .5em !important;
 }
 
 .contributorRightBoxAlt {
 	background-color: #CCE9F3;
 	color: rgb(102,102,112);
+	padding-top: .5em !important;
 }
 
 .contributorBox {
