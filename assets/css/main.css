@@ -3006,24 +3006,25 @@ h3.major.no-margin {
 }
 
 section.box.feature-grid *{
-	color: #666;
+	color: #fff;
 	text-align: center;
-	padding: 0 0 1.6em 0;
 }
 
 .contributorLeftBox {
-	background-color: #fff;
-	border: 1px solid #666;
+	background-color: #336791;
+	border-color: #336791;
+	color: #fff;
 }
 
 .contributorRightBox {
 	background-color: #fff;
 	color: #666670;
+	padding-top: 0 !important;
 }
 
 .contributorRightBoxAlt {
-	background-color: #cce9f3;
-	color: #666670;
+	background-color: #CCE9F3;
+	color: rgb(102,102,112);
 	padding-top: 0 !important;
 }
 
