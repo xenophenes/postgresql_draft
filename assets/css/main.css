@@ -1279,13 +1279,13 @@ header > p {
 .contributorRightBox p {
 	margin-bottom: 0;
 	margin-left: 15px;
-	min-height: 5em;
+	min-height: 6em;
 }
 
 .contributorRightBoxAlt p {
-	margin-bottom: 1em;
+	margin-bottom: 0;
 	margin-left: 15px;
-	min-height: 5em;
+	min-height: 6em;
 }
 
 @media screen and (max-width: 736px) {
@@ -3021,13 +3021,13 @@ section.box.feature-grid *{
 }
 
 .contributorRightBox {
-	background-color: #F2FBFE;
+	background-color: #fff;
 	color: rgb(102,102,112);
 	padding-top: .5em !important;
 }
 
 .contributorRightBoxAlt {
-	background-color: #CCE9F3;
+	background-color: #e7eae8;
 	color: rgb(102,102,112);
 	padding-top: .5em !important;
 }
