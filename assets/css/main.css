@@ -107,6 +107,16 @@ body {
 	margin-right: 10px;
 }
 
+.color {
+	background-color: #fff;
+	padding: 0 0 3em 0;
+}
+
+.coloralt {
+	background-color: #e7eae8;
+	padding: 0 5px 3em 5px;
+}
+
 @media screen and (min-width: 737px) {
 
 	.container.\31 25\25 {
@@ -875,6 +885,9 @@ body {
 		margin-left: 8.33333%;
 	}
 
+	.sidebar {
+		padding-left: 15px;
+	}
 }
 
 @media screen and (max-width: 736px) {
@@ -1097,6 +1110,10 @@ body {
 	#footer section, #footer .major  {
 		text-align: center;
 	}
+
+	.box.features {
+		margin-top: 10px;
+	}
 }
 
 /* Basic */
@@ -1105,7 +1122,7 @@ body {
 	background: #f2f5f3;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-	color: rgb(102,102,102);
+	color: #666;
 	font-size: 11.5pt;
 	line-height: 2em;
 }
@@ -1124,7 +1141,7 @@ body.is-loading * {
 input, textarea, select {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-	color: rgb(102,102,102);
+	color: #666;
 	font-size: 11.5pt;
 	line-height: 2em;
 }
@@ -1133,7 +1150,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: rgb(102,102,102);
+	color: #666;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1174,7 +1191,7 @@ a:hover {
 
 b, strong {
 	font-weight: 700;
-	color: rgb(102,102,102);
+	color: #666;
 }
 
 i, em {
@@ -1269,13 +1286,13 @@ header > p {
 .contributorRightBox p {
 	margin-bottom: 0;
 	margin-left: 15px;
-	min-height: 5em;
+	min-height: 6em;
 }
 
 .contributorRightBoxAlt p {
 	margin-bottom: 0;
 	margin-left: 15px;
-	min-height: 5em;
+	min-height: 6em;
 }
 
 @media screen and (max-width: 736px) {
@@ -1293,10 +1310,6 @@ header > p {
 	}
 	.contributorRightBoxAlt p {
 		margin-left: 0;
-	}
-	.contributorFaux {
-		background-color: #fff;
-		border-bottom: #fff;
 	}
 }
 
@@ -1671,7 +1684,7 @@ ol.default li {
 	padding-left: 0.25em;
 }
 
-/* Forms */
+/* Forms
 
 form label {
 	display: block;
@@ -1679,7 +1692,7 @@ form label {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: rgb(102,102,102);
+	color: #666;
 }
 
 form input[type="text"],
@@ -1699,7 +1712,7 @@ form input[type="email"]:focus,
 form input[type="password"]:focus,
 form select:focus,
 form textarea:focus {
-	border-color: #a1cd9b;
+	border-color: #666;
 }
 
 form input[type="text"],
@@ -1707,7 +1720,7 @@ form input[type="email"],
 form input[type="password"],
 form select {
 	line-height: 3em;
-	padding: 0 1em;
+	padding: 0 0 1em .5em;
 }
 
 form textarea {
@@ -1739,6 +1752,8 @@ form ::-moz-focus-inner {
 	border: 0;
 }
 
+*/
+
 /* Tables */
 
 table {
@@ -1768,7 +1783,7 @@ table.default th {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: rgb(102,102,102);
+	color: #666;
 }
 
 table.default thead {
@@ -2207,7 +2222,7 @@ table.default thead {
 		position: relative;
 		display: block;
 		text-decoration: none;
-		color: rgb(102,102,102);
+		color: #666;
 		top: -6px;
 		padding: 6px 1.5em 0.25em 1.5em;
 		border-bottom-left-radius: 6px;
@@ -2244,7 +2259,7 @@ table.default thead {
 	}
 
 	.dropotron {
-		background: rgb(102,102,102);
+		background: #666;
 		color: #fff;
 		border-radius: 6px;
 		line-height: 2.75em;
@@ -2291,7 +2306,7 @@ table.default thead {
 		left: 50%;
 		margin-left: -1em;
 		top: -0.65em;
-		border-bottom: solid 1em rgb(102,102,102);
+		border-bottom: solid 1em #666;
 		border-left: solid 1em transparent;
 		border-right: solid 1em transparent;
 	}
@@ -2497,10 +2512,14 @@ table.default thead {
 
 	/* Section/Article */
 
-	section, article {
+	section.box.feature, article.box.feature {
 		clear: both;
 		margin: 0 0 4em 0 !important;
 		text-align: center;
+	}
+
+	section.box.feature-grid {
+		margin-bottom: 1em;
 	}
 
 	header p {
@@ -2822,7 +2841,7 @@ table.default thead {
 	}
 
 	#titleBar .toggle:active:before {
-		background-color: #a1cd9b;
+		background-color: #666;
 	}
 
 	#navPanel {
@@ -3009,15 +3028,15 @@ section.box.feature-grid *{
 }
 
 .contributorRightBox {
-	background-color: #F2FBFE;
+	background-color: #fff;
 	color: rgb(102,102,112);
-	padding-top: 0 !important;
+	padding-top: .5em !important;
 }
 
 .contributorRightBoxAlt {
-	background-color: #CCE9F3;
+	background-color: #e7eae8;
 	color: rgb(102,102,112);
-	padding-top: 0 !important;
+	padding-top: .5em !important;
 }
 
 .contributorBox {
@@ -3028,8 +3047,8 @@ section.box.feature-grid *{
 	width: 100%;
 	height: 34px;
 	overflow: hidden;
-	background-color: #ddd;
-	border: 1px solid #ccc;
+	background-color: #fff;
+	border: solid 2px #e7eae8;
 }
 
 .mailListSubmit {
@@ -3037,5 +3056,54 @@ section.box.feature-grid *{
 }
 
 form[name="searchMailingList"] {
-	margin-bottom: 15px;
+	margin-bottom: 4em;
+}
+
+select {
+    padding:3px;
+		width: 100%;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+}
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {padding-right:18px}
+}
+
+label {position:relative}
+label:after {
+    content:'<>';
+    font:11px "Consolas", monospace;
+    color:#aaa;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:8px; top:2px;
+    padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+label:before {
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    background:#f8f8f8;
+    position:absolute;
 }
