@@ -113,8 +113,8 @@ body {
 }
 
 .coloralt {
-	background-color: #f6f6f6;
-	padding: 0 0 3em 0;
+	background-color: #e7eae8;
+	padding: 0 5px 3em 5px;
 }
 
 @media screen and (min-width: 737px) {
@@ -3049,7 +3049,7 @@ section.box.feature-grid *{
 }
 
 form[name="searchMailingList"] {
-	margin-bottom: 15px;
+	margin-bottom: 4em;
 }
 
 select {
