@@ -885,6 +885,9 @@ body {
 		margin-left: 8.33333%;
 	}
 
+	.sidebar {
+		padding-left: 15px;
+	}
 }
 
 @media screen and (max-width: 736px) {
@@ -1106,6 +1109,10 @@ body {
 	.box.post-centered h3, .box.post-centered .meta,
 	#footer section, #footer .major  {
 		text-align: center;
+	}
+
+	.box.features {
+		margin-top: 10px;
 	}
 }
 
