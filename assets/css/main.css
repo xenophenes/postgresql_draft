@@ -1,120 +1,83 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Open+Sans+Condensed:700");
 
-/*
-TXT by HTML5 UP
-html5up.net | @n33co
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-/* Reset */
+/* #RESET */
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 
 body {
-	line-height: 1;
+    line-height: 1;
 }
 
 ol, ul {
-	list-style: none;
-}
-
-.about.ul {
-	list-style-type: circle;
-	padding-left: 1.3em;
+    list-style: none;
 }
 
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 
 blockquote:before, blockquote:after, q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 
 table, th, td {
-	border-collapse: collapse;
-	border-spacing: 3em;
-	border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 3em;
+    border: 1px solid black;
 }
 
 body {
-	-webkit-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
 }
 
-/* Box Model */
+/* #BOX MODEL */
 
 *, *:before, *:after {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-/* Containers */
+/* #CONTAINERS */
 
 .container {
-	margin-left: auto;
-	margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container.\31 25\25 {
-	width: 100%;
-	max-width: 1200px;
-	min-width: 960px;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 960px;
 }
 
 .container.\37 5\25 {
-	width: 720px;
+    width: 720px;
 }
 
 .container.\35 0\25 {
-	width: 480px;
+    width: 480px;
 }
 
 .container.\32 5\25 {
-	width: 240px;
+    width: 240px;
 }
 
 .container {
 	width: 960px;
-}
-
-.item blockquote {
-	border-left: none;
-	margin: 0;
-}
-
-.item blockquote img {
-	margin-bottom: 10px;
-}
-
-.item blockquote p:before {
-	content: "\f10d";
-	font-family: 'Fontawesome';
-	float: left;
-	margin-right: 10px;
-}
-
-.color {
-	background-color: #fff;
-	padding: 0 0 3em 0;
-}
-
-.coloralt {
-	background-color: #e7eae8;
-	padding: 0 5px 3em 5px;
 }
 
 @media screen and (min-width: 737px) {
@@ -144,15 +107,11 @@ body {
 }
 
 @media screen and (min-width: 737px) and (max-width: 1200px) {
-	/* Calendar Box */
-	.calendarBox, .calendarBoxAlt {
-		height: 5em !important;
-	}
 
 	.container.\31 25\25 {
 		width: 100%;
 		max-width: 1200px;
-		min-width: 960px;
+		min-width: 960px;calendarBox
 	}
 
 	.container.\37 5\25 {
@@ -199,7 +158,24 @@ body {
 
 }
 
-/* Grid */
+/* #ALTERNATING COLOR BOXES */
+
+/**
+* Both of the below are used on mailinglists.html under the "Subscribe" section.
+*/
+
+.color {
+	background-color: #fff;
+	padding: 0 0 3em 0;
+}
+
+.coloralt {
+	background-color: #e7eae8;
+	padding: 0 5px 3em 5px;
+}
+
+
+/* #GRID */
 
 .row {
 	border-bottom: solid 1px transparent;
@@ -1116,7 +1092,8 @@ body {
 	}
 }
 
-/* Basic */
+
+/* #BASIC */
 
 body {
 	background: #f2f5f3;
@@ -1220,17 +1197,37 @@ hr {
 	margin: 0 0 3em 0;
 }
 
+p, ul, ol, dl, table {
+	margin-bottom: 3em;
+}
+
+
+/* #BLOCKQUOTE */
+
 blockquote {
 	border-left: solid 5px #E7EAE8;
 	padding: 1em 4em 3em .5em;
 	font-style: italic;
 }
 
-p, ul, ol, dl, table {
-	margin-bottom: 3em;
+.item blockquote {
+	border-left: none;
+	margin: 0;
 }
 
-/* Section/Article */
+.item blockquote img {
+	margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+	content: "\f10d";
+	font-family: 'Fontawesome';
+	float: left;
+	margin-right: 10px;
+}
+
+
+/* #SECTION, #ARTICLE */
 
 section, article {
 	margin-bottom: 6em;
@@ -1248,7 +1245,7 @@ header > p {
 	color: rgb(102, 102, 102);
 }
 
-/* Featured Sections */
+/* #FEATURED SECTIONS */
 
 .margin-1-bottom {
 	margin-bottom: 1em;
@@ -1257,6 +1254,13 @@ header > p {
 .feature {
 	text-align: center;
 }
+
+
+/* #RELEASE BOX */
+
+/**
+* Used on index.html.
+*/
 
 .releaseBox {
 	background-color: #eee;
@@ -1268,6 +1272,13 @@ header > p {
 	height: 2em;
 }
 
+
+/* #CALENDAR BOXES */
+
+/**
+* Used on index.html.
+*/
+
 .calendarBox {
 	background-color: #eee;
 	height: 4.1em;
@@ -1278,42 +1289,14 @@ header > p {
 	height: 4.1em;
 }
 
-.contributorFaux {
-	background-color: #336791;
-	border-bottom: #fff;
-}
-
-.contributorRightBox p {
-	margin-bottom: 0;
-	margin-left: 15px;
-	min-height: 6em;
-}
-
-.contributorRightBoxAlt p {
-	margin-bottom: 0;
-	margin-left: 15px;
-	min-height: 6em;
-}
-
-@media screen and (max-width: 736px) {
-	.contributorRightBox p {
-		margin-left: 0;
-	}
-
-	.contributorRightBoxAlt p {
-		margin-left: 0;
-	}
-}
-@media screen and (min-width: 737px) and (max-width: 850px) {
-	.contributorRightBox p {
-		margin-left: 0;
-	}
-	.contributorRightBoxAlt p {
-		margin-left: 0;
+@media screen and (min-width: 737px) and (max-width: 1200px) {
+	.calendarBox, .calendarBoxAlt {
+		height: 5em !important;
 	}
 }
 
-/* Image */
+
+/* #IMAGE */
 
 .image {
 	position: relative;
@@ -3021,6 +3004,13 @@ section.box.feature-grid *{
 	text-align: center;
 }
 
+
+/* #CONTRIBUTOR GREYBOXES */
+
+/**
+* Used on contributors.html.
+*/
+
 .contributorLeftBox {
 	background-color: #336791;
 	border-color: #336791;
@@ -3033,15 +3023,75 @@ section.box.feature-grid *{
 	padding-top: .5em !important;
 }
 
+.contributorRightBox p {
+	margin-bottom: 0;
+	margin-left: 15px;
+	min-height: 6em;
+}
+
 .contributorRightBoxAlt {
 	background-color: #e7eae8;
 	color: rgb(102,102,112);
 	padding-top: .5em !important;
 }
 
+.contributorRightBoxAlt p {
+	margin-bottom: 0;
+	margin-left: 15px;
+	min-height: 6em;
+}
+
 .contributorBox {
 	margin-bottom: 2em;
 }
+
+.contributorFaux {
+	background-color: #336791;
+	border-bottom: #fff;
+}
+
+/* #CONTRIBUTOR GREYBOXES MOBILE */
+
+@media screen and (max-width: 736px) {
+	.contributorRightBox p {
+		margin-left: 0;
+	}
+
+	.contributorRightBoxAlt p {
+		margin-left: 0;
+	}
+}
+
+
+/* #CONTRIBUTOR GREYBOXES TABLET */
+
+@media screen and (min-width: 737px) and (max-width: 850px) {
+	.contributorRightBox p {
+		margin-left: 0;
+	}
+	.contributorRightBoxAlt p {
+		margin-left: 0;
+	}
+}
+
+/* #SIDEBAR UL STYLING */
+
+/**
+* !Bugfix --
+* Need to fix the element select to where it's for sidebar ul and not about.html only.
+*/
+
+.about.ul {
+    list-style-type: circle;
+    padding-left: 1.3em;
+}
+
+
+/* #STYLEDSELECT */
+
+/**
+* Used on mailinglists.html as part of the mailinglist subscribe functionality.
+*/
 
 .styledSelect, .styledInput {
 	width: 100%;
@@ -3050,6 +3100,13 @@ section.box.feature-grid *{
 	background-color: #fff;
 	border: solid 2px #e7eae8;
 }
+
+
+/* #MAILING LISTS SEARCH & SUBMIT FUNCTIONALITY */
+
+/**
+* Used on mailinglists.html.
+*/
 
 .mailListSubmit {
 	float: right;
