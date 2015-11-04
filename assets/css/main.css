@@ -1576,93 +1576,100 @@ table.default thead {
 	  #navPanel .indent-2 {
 				display: inline-block;
 		    width: 2em;
-			}
+		}
 
-	#navPanel .indent-3 {
-		display: inline-block;
-		width: 3em;
-	}
+	  #navPanel .indent-3 {
+		    display: inline-block;
+		    width: 3em;
+	  }
 
-	#navPanel .indent-4 {
-		display: inline-block;
-		width: 4em;
-	}
+	  #navPanel .indent-4 {
+	    	display: inline-block;
+		    width: 4em;
+  	}
 
-	#navPanel .indent-5 {
-		display: inline-block;
-		width: 5em;
-	}
+  	#navPanel .indent-5 {
+	    	display: inline-block;
+		    width: 5em;
+  	}
 
-	#navPanel .depth-0 {
-		color: #fff;
-	}
+	  #navPanel .depth-0 {
+		    color: #fff;
+  	}
 
-	body.navPanel-visible #page-wrapper {
-		-moz-transform: translateX(275px);
-		-webkit-transform: translateX(275px);
-		-ms-transform: translateX(275px);
-		transform: translateX(275px);
-	}
+  	body.navPanel-visible #page-wrapper {
+	    	-moz-transform: translateX(275px);
+		    -webkit-transform: translateX(275px);
+		    -ms-transform: translateX(275px);
+		    transform: translateX(275px);
+	  }
 
-	body.navPanel-visible #titleBar {
-		-moz-transform: translateX(275px);
-		-webkit-transform: translateX(275px);
-		-ms-transform: translateX(275px);
-		transform: translateX(275px);
-	}
+	  body.navPanel-visible #titleBar {
+		    -moz-transform: translateX(275px);
+		    -webkit-transform: translateX(275px);
+		    -ms-transform: translateX(275px);
+		    transform: translateX(275px);
+  	}
 
-	body.navPanel-visible #navPanel {
-		-moz-transform: translateX(0);
-		-webkit-transform: translateX(0);
-		-ms-transform: translateX(0);
-		transform: translateX(0);
-	}
-	ul.divided-right > li {
-		border-right: 0;
-	}
+	  body.navPanel-visible #navPanel {
+		    -moz-transform: translateX(0);
+		    -webkit-transform: translateX(0);
+		    -ms-transform: translateX(0);
+		    transform: translateX(0);
+	  }
 
-	h2.major {
-		border: 0;
-		text-align: center;
-	}
+    ul.divided-right > li {
+		    border-right: 0;
+	  }
 
-	h3.major {
-		border: 0;
-	}
+	  h2.major {
+		    border: 0;
+		    text-align: center;
+	  }
 
-	ol, ul, li {
-		list-style: none;
-	}
+	  h3.major {
+		    border: 0;
+	  }
+
+	  ol, ul, li {
+	    	list-style: none;
+	  }
 
 }
 
+
+/* #NO-MARGIN */
+
 h2.major.no-margin {
-	margin: 0;
-	text-align: center;
+	  margin: 0;
+	  text-align: center;
 }
 
 h3.major.no-margin {
-	margin: 0;
-	text-align: center;
+  	margin: 0;
+	  text-align: center;
 }
 
 .box.features.no-margin {
-	margin: 0;
+  	margin: 0;
 }
 
+
+/* #JCAROUSEL */
+
 .jcarousel li {
-	margin-left: 10px;
+	  margin-left: 10px;
 }
 
 .jcarousel blockquote {
-	border-left: none;
+	  border-left: none;
 }
 
 .jcarousel blockquote p:before {
-	content: "\f10d";
-	font-family: 'Fontawesome';
-	float: left;
-	margin-right: 10px;
+	  content: "\f10d";
+	  font-family: 'Fontawesome';
+	  float: left;
+	  margin-right: 10px;
 }
 
 
@@ -1673,66 +1680,71 @@ h3.major.no-margin {
 */
 
 .contributorLeftBox {
-	background-color: #336791;
-	border-color: #336791;
-	color: #fff;
+  	background-color: #336791;
+	  border-color: #336791;
+	  color: #fff;
 }
 
 .contributorRightBox {
-	background-color: #fff;
-	color: #666670;
-	padding-top: .5em !important;
+	  background-color: #fff;
+ 	  color: #666670;
+  	padding-top: .5em !important;
 }
 
 .contributorRightBox p {
-	margin-bottom: 0;
-	margin-left: 15px;
-	min-height: 6em;
+  	margin-bottom: 0;
+	  margin-left: 15px;
+  	min-height: 6em;
 }
 
 .contributorRightBoxAlt {
-	background-color: #e7eae8;
-	color: #666670;
-	padding-top: .5em !important;
+  	background-color: #e7eae8;
+	  color: #666670;
+	  padding-top: .5em !important;
 }
 
 .contributorRightBoxAlt p {
-	margin-bottom: 0;
-	margin-left: 15px;
-	min-height: 6em;
+  	margin-bottom: 0;
+	  margin-left: 15px;
+  	min-height: 6em;
 }
 
 .contributorBox {
-	margin-bottom: 2em;
+  	margin-bottom: 2em;
 }
 
 .contributorFaux {
-	background-color: #336791;
-	border-bottom: #fff;
+	  background-color: #336791;
+	  border-bottom: #fff;
 }
 
 /* #CONTRIBUTOR GREYBOXES MOBILE */
 
 @media screen and (max-width: 736px) {
-	.contributorRightBox p {
-		margin-left: 0;
-	}
 
-	.contributorRightBoxAlt p {
-		margin-left: 0;
-	}
+	  .contributorRightBox p {
+		    margin-left: 0;
+	  }
+
+	  .contributorRightBoxAlt p {
+		    margin-left: 0;
+	  }
+
 }
 
 
 /* #CONTRIBUTOR GREYBOXES TABLET */
 
 @media screen and (min-width: 737px) and (max-width: 850px) {
-	.contributorRightBox p {
-		margin-left: 0;
-	}
-	.contributorRightBoxAlt p {
-		margin-left: 0;
-	}
+
+	  .contributorRightBox p {
+		    margin-left: 0;
+	  }
+
+	  .contributorRightBoxAlt p {
+		    margin-left: 0;
+	  }
+
 }
 
 /* #SIDEBAR UL STYLING */
