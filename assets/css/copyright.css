@@ -1,0 +1,61 @@
+/* #COPYRIGHT */
+
+#copyright {
+		display: inline-block;
+		background: #e7eae8;
+		padding: 0.75em 2em 0.75em 2em;
+		border-radius: 8px;
+		color: #8b9790;
+}
+
+#copyright a {
+		color: inherit;
+}
+
+#copyright .menu {
+		margin: 0;
+}
+
+#copyright .menu li {
+		border-color: #264d6d;
+		border-width: 2px;
+		line-height: 1em;
+}
+
+
+/* #COPYRIGHT DESKTOP */
+
+@media screen and (min-width: 737px) {
+
+    #copyright {
+  	  	margin: 4em 0 0 0;
+  	}
+
+}
+
+
+/* #COPYRIGHT TABLET */
+
+@media screen and (min-width: 737px) and (max-width: 1200px) {
+
+    #copyright {
+  		  margin: 0;
+  	}
+
+}
+
+
+/* #COPYRIGHT MOBILE */
+
+@media screen and (max-width: 850px) {
+
+    #copyright {
+		    width: 100%;
+		    display: block;
+    }
+
+	  #copyright .menu li {
+		    line-height: inherit;
+	  }
+
+}
