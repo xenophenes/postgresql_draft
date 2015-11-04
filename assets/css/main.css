@@ -1346,7 +1346,7 @@ table.default thead {
 	}
 
 	#main-wrapper {
-		border-top-width: 0px;
+		border-top-width: 0;
 		border-bottom-width: 5px;
 	}
 
@@ -1513,7 +1513,7 @@ table.default thead {
 		font-weight: 700;
 		text-transform: uppercase;
 		font-size: 1.25em;
-		box-shadow: inset -3px 0px 10px 0px rgba(0, 0, 0, 0.25);
+		box-shadow: inset -3px 0 10px 0 rgba(0, 0, 0, 0.25);
 	}
 
 	#navPanel nav {
@@ -1797,7 +1797,7 @@ label:after {
 }
 label:before {
     content:'';
-    right:6px; top:0px;
+    right:6px; top:0;
     width:20px; height:20px;
     background:#f8f8f8;
     position:absolute;
