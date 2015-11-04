@@ -218,7 +218,7 @@ header > p {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: rgb(102, 102, 102);
+	color: #666;
 }
 
 /* #FEATURED SECTIONS */
@@ -333,7 +333,7 @@ ul.contact li a {
 	height: 48px;
 	border-radius: 6px;
 	outline: 0;
-	background: rgb(102, 102, 102);
+	background: #666;
 	text-align: center;
 }
 
@@ -405,7 +405,7 @@ ul.special a {
 	transition: background-color .2s ease-in-out;
 	display: block;
 	position: relative;
-	background: rgb(102, 102, 102);
+	background: #666;
 	width: 12em;
 	height: 12em;
 	border-radius: 6em;
@@ -621,12 +621,12 @@ table.default thead {
 #main-wrapper {
 	background: #fff;
 	border-top: 5px solid #336791;
-	border-bottom: solid 5px rgb(102, 102, 102);
+	border-bottom: solid 5px #666;
 }
 
 #main-wrapper-about {
 	background: #fff;
-	border-bottom: solid 5px rgb(102, 102, 102);
+	border-bottom: solid 5px #666;
 }
 /* Banner */
 
