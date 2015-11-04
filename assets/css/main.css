@@ -1607,7 +1607,7 @@ table.default thead {
 	  body.navPanel-visible #titleBar {
 		    -moz-transform: translateX(275px);
 		    -webkit-transform: translateX(275px);
-		    -ms-transform: translateX(275px);
+		    -ms-transform: translateX(275px);r
 		    transform: translateX(275px);
   	}
 
@@ -1747,6 +1747,7 @@ h3.major.no-margin {
 
 }
 
+
 /* #SIDEBAR UL STYLING */
 
 /**
@@ -1759,12 +1760,15 @@ h3.major.no-margin {
     padding-left: 1.3em;
 }
 
+
 /* #SIDEBAR TABLET */
 
 @media screen and (min-width: 737px) and (max-width: 1200px) {
+
     .sidebar {
 		    padding-left: 15px;
     }
+
 }
 
 
@@ -1775,11 +1779,11 @@ h3.major.no-margin {
 */
 
 .styledSelect, .styledInput {
-	width: 100%;
-	height: 34px;
-	overflow: hidden;
-	background-color: #fff;
-	border: solid 2px #e7eae8;
+  	width: 100%;
+	  height: 34px;
+	  overflow: hidden;
+	  background-color: #fff;
+	  border: solid 2px #e7eae8;
 }
 
 
@@ -1790,58 +1794,73 @@ h3.major.no-margin {
 */
 
 .mailListSubmit {
-	float: right;
+  	float: right;
 }
 
 form[name="searchMailingList"] {
-	margin-bottom: 4em;
+	  margin-bottom: 4em;
 }
 
 select {
-    padding:3px;
-		width: 100%;
+    padding: 3px;
+  	width: 100%;
     margin: 0;
-    -webkit-border-radius:4px;
-    -moz-border-radius:4px;
-    border-radius:4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
     -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
     -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
     box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
     background: #f8f8f8;
-    color:#888;
-    border:none;
-    outline:none;
+    color: #888;
+    border: none;
+    outline: none;
     display: inline-block;
-    -webkit-appearance:none;
-    -moz-appearance:none;
-    appearance:none;
-    cursor:pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
 }
 
-/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+/* Targeting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-    select {padding-right:18px}
+
+    select {
+        padding-right: 18px;
+    }
+
 }
 
-label {position:relative}
-label:after {
-    content:'<>';
-    font:11px "Consolas", monospace;
-    color:#aaa;
-    -webkit-transform:rotate(90deg);
-    -moz-transform:rotate(90deg);
-    -ms-transform:rotate(90deg);
-    transform:rotate(90deg);
-    right:8px; top:2px;
-    padding:0 0 2px;
-    border-bottom:1px solid #ddd;
-    position:absolute;
-    pointer-events:none;
+
+/* #LABEL */
+
+label {
+    position: relative;
 }
+
+label:after {
+    content: '<>';
+    font: 11px "Consolas", monospace;
+    color: #aaa;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 8px;
+    top: 2px;
+    padding: 0 0 2px;
+    border-bottom: 1px solid #ddd;
+    position: absolute;
+    pointer-events: none;
+}
+
 label:before {
-    content:'';
-    right:6px; top:0;
-    width:20px; height:20px;
-    background:#f8f8f8;
-    position:absolute;
+    content: '';
+    right: 6px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: #f8f8f8;
+    position: absolute;
 }
