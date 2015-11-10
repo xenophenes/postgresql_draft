@@ -1,3 +1,18 @@
+/**
+* Authors: Joshua Santos, Sarah Conway
+* Joshua Santos URI: http://nerdsville.net/
+* Sarah Conway URI: http://sarahconway.com/
+*
+* -----------------------------------------
+* REFERENCE COLORS:
+* (in order from lightest to darkest)
+*
+* #e7eae8: Extremely light gray, used for alternating color boxes such as on mailinglists.html
+* #e7eae8
+*
+* #666: Dark gray, official PostgreSQL gray color and equivalent to RGB(102,102,102)
+*/
+
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Open+Sans+Condensed:700");
 
@@ -239,7 +254,7 @@ header > p {
 */
 
 .releaseBox {
-  	background-color: #eee;
+  	background-color: #e7eae8;
 	  height: 2em;
 }
 
@@ -256,7 +271,7 @@ header > p {
 */
 
 .calendarBox {
-	  background-color: #eee;
+	  background-color: #e7eae8;
 	  height: 4.1em;
 }
 
@@ -707,7 +722,7 @@ table.default thead {
 				width: 68px;
 				height: 68px;
 				text-align: center;
-				background: #eee;
+				background: #e7eae8;
 				text-transform: uppercase;
 		}
 
