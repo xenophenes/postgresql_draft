@@ -439,9 +439,8 @@ ul.special a:before {
 	  font-size: 96px;
 	  line-height: 128px;
 	  left: 50%;
-  	margin-top: -64px;
+    margin: -64px 0 0 -64px; /* top, right, bottom and left values respectively. */
   	top: 50%;
-	  margin-left: -64px;
 	  color: #fff;
 	  text-align: center;
 }
@@ -1709,8 +1708,7 @@ h3.major.no-margin {
 }
 
 .contributorRightBox p {
-  	margin-bottom: 0;
-	  margin-left: 15px;
+    margin: 0 0 0 15px; /* top, right, bottom and left values respectively. */
   	min-height: 6em;
 }
 
