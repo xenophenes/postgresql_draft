@@ -439,7 +439,7 @@ ul.special a:before {
 	  font-size: 96px;
 	  line-height: 128px;
 	  left: 50%;
-    margin: -64px 0 0 -64px; /* top, right, bottom and left values respectively. */
+    margin: -64px 0 0 -64px;
   	top: 50%;
 	  color: #fff;
 	  text-align: center;
@@ -818,8 +818,7 @@ table.default thead {
 		}
 
 		.sidebar h2.major span {
-				padding-left: 0;
-				padding-bottom: 0;
+				padding: 0;
 		}
 
 
@@ -1357,8 +1356,7 @@ table.default thead {
 	  .sidebar {
 				border-top: solid 2px #e7eae8;
 				border-bottom: solid 2px #e7eae8;
-				padding-top: 5em;
-				padding-bottom: 5em;
+        padding: 5em 0 5em 0;
 				margin-top: 5em;
 	  }
 
@@ -1708,7 +1706,7 @@ h3.major.no-margin {
 }
 
 .contributorRightBox p {
-    margin: 0 0 0 15px; /* top, right, bottom and left values respectively. */
+    margin: 0 0 0 15px;
   	min-height: 6em;
 }
 
@@ -1719,8 +1717,7 @@ h3.major.no-margin {
 }
 
 .contributorRightBoxAlt p {
-  	margin-bottom: 0;
-	  margin-left: 15px;
+    margin: 0 0 0 15px;
   	min-height: 6em;
 }
 
