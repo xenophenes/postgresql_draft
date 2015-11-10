@@ -13,6 +13,10 @@
 * #688297: Grayish blue, used in Dropotron
 * #336791: Medium blue, official PostgreSQL blue color
 * #264d6d: Dark blue
+*
+* -----------------------------------------
+* All padding: 0 0 0 0; and margin: 0 0 0 0; definitions are top, right, bottom, left specifications, respectively.
+*
 */
 
 @import url("font-awesome.min.css");
