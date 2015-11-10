@@ -1,3 +1,27 @@
+/**
+* Authors: Joshua Santos, Sarah Conway
+* Joshua Santos URI: http://nerdsville.net/
+* Sarah Conway URI: http://sarahconway.com/
+*
+* -----------------------------------------
+* REFERENCE COLORS:
+* (in order from lightest to darkest)
+*
+* #e7eae8: Extremely light gray, used for alternating color boxes such as on mailinglists.html
+* #d7dad8: Medium gray, used in Dropotron
+* #666: Dark gray, official PostgreSQL gray color and equivalent to RGB(102,102,102)
+* #688297: Grayish blue, used in Dropotron
+* #336791: Medium blue, official PostgreSQL blue color
+* #264d6d: Dark blue
+*
+* -----------------------------------------
+* All padding: 0 0 0 0; and margin: 0 0 0 0; definitions are top, right, bottom, left specifications, respectively.
+*
+*/
+
+
+/* #JCAROUSEL WRAPPER */
+
 .jcarousel-wrapper {
     margin: 20px auto 3em auto;
     position: relative;
@@ -10,7 +34,7 @@
     box-shadow: 0 0 2px #999;
 }
 
-/** Carousel **/
+/* #JCAROUSEL */
 
 .jcarousel {
     position: relative;
@@ -41,7 +65,7 @@
     height: auto !important;
 }
 
-/** Carousel Controls **/
+/* #JCAROUSEL CONTROLS */
 
 .jcarousel-control-prev,
 .jcarousel-control-next {
@@ -72,7 +96,7 @@
     right: 15px;
 }
 
-/** Carousel Pagination **/
+/* #JCAROUSEL PAGINATION */
 
 .jcarousel-pagination {
     position: absolute;
