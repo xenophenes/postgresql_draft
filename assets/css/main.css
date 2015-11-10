@@ -8,9 +8,11 @@
 * (in order from lightest to darkest)
 *
 * #e7eae8: Extremely light gray, used for alternating color boxes such as on mailinglists.html
-* #e7eae8
-*
+* #d7dad8: Medium gray, used in Dropotron
 * #666: Dark gray, official PostgreSQL gray color and equivalent to RGB(102,102,102)
+* #688297: Grayish blue, used in Dropotron
+* #336791: Medium blue, official PostgreSQL blue color
+* #264d6d: Dark blue
 */
 
 @import url("font-awesome.min.css");
@@ -471,7 +473,7 @@ ul.meta li:before {
 }
 
 ul.menu li {
-  	border-left: solid 1px #E7EAE8;
+  	border-left: solid 1px #e7eae8;
 	  display: inline-block;
 	  padding: 0 0 0 0.75em;
 	  margin: 0 0 0 0.75em;
@@ -989,7 +991,7 @@ table.default thead {
 
 	  .dropotron li > a, .dropotron li > span {
 				display: block;
-				color: #D7DAD8;
+				color: #d7dad8;
 				text-decoration: none;
 				padding: 0 1.25em;
   	}
