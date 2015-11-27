@@ -1,0 +1,110 @@
+/**
+* Authors: Joshua Santos, Sarah Conway
+* Joshua Santos URI: http://nerdsville.net/
+* Sarah Conway URI: http://sarahconway.com/
+*
+* -----------------------------------------
+* REFERENCE COLORS:
+* (in order from lightest to darkest)
+*
+* #e7eae8: Extremely light gray, used for alternating color boxes such as on mailinglists.html
+* #d7dad8: Medium gray, used in Dropotron
+* #666: Dark gray, official PostgreSQL gray color and equivalent to RGB(102,102,102)
+* #688297: Grayish blue, used in Dropotron
+* #336791: Medium blue, official PostgreSQL blue color
+* #264d6d: Dark blue
+*
+* -----------------------------------------
+* All padding: 0 0 0 0; and margin: 0 0 0 0; definitions are top, right, bottom, left specifications, respectively.
+*
+*/
+
+
+/* #IMAGE */
+
+     .image {
+        position: relative;
+        display: inline-block;
+        border-radius: 8px;
+    }
+
+    .image img {
+        display: block;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .image:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+	      height: 100%;
+	      border-radius: 8px;
+    }
+
+    .image.fit {
+	      display: block;
+	      width: 100%;
+    }
+
+    .image.featured {
+        display: inline-block;
+	      max-width: 17.1em;
+    }
+
+    .image.featured img {
+	      width: 42%;
+	      margin-left: auto;image
+	      margin-right: auto;
+    }
+
+    .image.featured.second {
+	      width: 100%;
+	      margin: 0 0 15em 0;
+    }
+
+    .image.featured.image-section {
+	      width: 0em;
+	      height: 0em;
+	      font-size: 8em;
+	      text-align: center;
+	      display: inline;
+	      color: #000;
+    }
+
+    .image.left {
+	      float: left;
+	      margin: 0 2em 2em 0;
+    }
+
+    .image.centered {
+	      display: block;
+	      margin: 0 0 2em 0;
+    }
+
+    .image.centered img {
+	      margin: 0 auto;
+	      width: auto;
+    }
+
+
+/* #PLANETPOSTGRESQL */
+
+    .planetPostgresqlGlobe {
+    	text-align: center;
+    	font-size: 5em;
+    	color: #336791;
+    }
+
+
+/* #TABLET */
+
+@media screen and (min-width: 737px) and (max-width: 1200px) {
+
+    .image.featured img {
+		    width: 45.7%;
+	  }
+
+}

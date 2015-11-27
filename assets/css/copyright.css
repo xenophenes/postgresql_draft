@@ -1,0 +1,83 @@
+/**
+* Authors: Joshua Santos, Sarah Conway
+* Joshua Santos URI: http://nerdsville.net/
+* Sarah Conway URI: http://sarahconway.com/
+*
+* -----------------------------------------
+* REFERENCE COLORS:
+* (in order from lightest to darkest)
+*
+* #e7eae8: Extremely light gray, used for alternating color boxes such as on mailinglists.html
+* #d7dad8: Medium gray, used in Dropotron
+* #666: Dark gray, official PostgreSQL gray color and equivalent to RGB(102,102,102)
+* #688297: Grayish blue, used in Dropotron
+* #336791: Medium blue, official PostgreSQL blue color
+* #264d6d: Dark blue
+*
+* -----------------------------------------
+* All padding: 0 0 0 0; and margin: 0 0 0 0; definitions are top, right, bottom, left specifications, respectively.
+*
+*/
+
+
+/* #COPYRIGHT */
+
+#copyright {
+		display: inline-block;
+		background: #e7eae8;
+		padding: 0.75em 2em 0.75em 2em;
+		border-radius: 8px;
+		color: #8b9790;
+}
+
+#copyright a {
+		color: inherit;
+}
+
+#copyright .menu {
+		margin: 0;
+}
+
+#copyright .menu li {
+		border-color: #264d6d;
+		border-width: 2px;
+		line-height: 1em;
+}
+
+
+/* #COPYRIGHT DESKTOP */
+
+@media screen and (min-width: 737px) {
+
+    #copyright {
+  	  	margin: 4em 0 0 0;
+  	}
+
+}
+
+
+/* #COPYRIGHT TABLET */
+
+@media screen and (min-width: 737px) and (max-width: 1200px) {
+
+    #copyright {
+  		  margin: 0;
+  	}
+
+}
+
+
+/* #COPYRIGHT MOBILE */
+
+@media screen and (max-width: 850px) {
+
+    #copyright {
+		    width: 100%;
+		    display: block;
+    }
+
+	  #copyright .menu li {
+		    line-height: inherit;
+	  }
+
+}
