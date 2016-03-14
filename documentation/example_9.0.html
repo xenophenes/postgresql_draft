@@ -1,0 +1,399 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>PostgreSQL - Manuals</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/button.css" />
+	<link rel="stylesheet" href="../assets/css/containers.css" />
+	<link rel="stylesheet" href="../assets/css/copyright.css" />
+	<link rel="stylesheet" href="../assets/css/forms.css" />
+	<link rel="stylesheet" href="../assets/css/grid.css" />
+	<link rel="stylesheet" href="../assets/css/images.css" />
+	<link rel="stylesheet" href="../assets/css/jcarousel.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jcarousel.min.js"></script>
+	<script src="../assets/js/jcarousel-responsive.js"></script>
+</head>
+<body>
+	<div id="logo" style="display:none;">Postgresql</div>
+	<div id="page-wrapper">
+
+		<!-- Header -->
+
+		<nav id="nav">
+			<ul>
+				<li><span class="header"><img src="../images/Postgresql_elephant.svg" alt="" /></span></li>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../about/about.html">About</a></li>
+				<li><a href="../download/download.html">Download</a></li>
+				<li class="current"><a href="../documentation/documentation.html">Documentation</a></li>
+				<li><a href="../community/community.html">Community</a></li>
+				<li><a href="../support/support.html">Support</a></li>
+				<li><a href="../login/login.html">Login</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main-wrapper-about">
+			<div id="main" class="container">
+				<div class="row padding-left-mobile">
+					<div class="2u 12u(mobile)">
+						<div class="sidebar">
+
+							<!-- Sidebar -->
+
+							<!-- Related Links -->
+							<section>
+								<h2 class="major"><span>Quick Links</span></h2>
+								<ul class="about ul">
+									<li><a href="../documentation/documentation.html">Documentation</a></li>
+									<li><a href="../documentation/manuals.html">Manuals</a></li>
+                  <li><a href="../documentation/security.html">Security</a></li>
+                  <li><a href="../documentation/manuals/latest_release">What's New?</a></li>
+                  <li><a href="https://wiki.postgresql.org/wiki/Category:FAQ">FAQ</a></li>
+                  <li><a href="../documentation/books.html">Books</a></li>
+                  <li><a href="https://wiki.postgresql.org">Wiki</a></li>
+								</ul>
+							</section>
+
+						</div>
+					</div>
+					<div class="10u 12u(mobile) important(mobile)">
+						<div class="content content-right">
+
+							<!-- Content -->
+
+							<article class="box page-content">
+
+								<header>
+									<h2>PostgreSQL 9.0.23 Documentation <span class="header images"><img src="../images/documentation.svg" alt="" /></span></h2>
+								</header>
+
+                <div id="docContainerWrap">
+
+                <div id="docContent">
+                <div class="BOOK">
+                  <a name="POSTGRES" id="POSTGRES"></a>
+
+                  <div class="TITLEPAGE">
+
+                    <h3 class="major"><span>The PostgreSQL Global Development
+                    Group</span></h3>
+
+                    <p class="COPYRIGHT"><a href="LEGALNOTICE.html">Copyright</a> ©
+                    1996-2015 The PostgreSQL Global Development Group</p>
+                  </div>
+
+                  <div class="TOC">
+                    <h3 class="major"><span>Table of Contents</span></h3>
+                    <dl>
+
+                      <dt><a href="preface.html">Preface</a></dt>
+
+                      <dd>
+                        <dl>
+                          <dt><a href="intro-whatis.html">What is <span class="PRODUCTNAME">PostgreSQL</span>?</a></dt>
+
+                          <dt><a href="history.html">A Brief History of
+                          <span class="PRODUCTNAME">PostgreSQL</span></a></dt>
+
+                          <dt><a href="notation.html">Conventions</a></dt>
+
+                          <dt><a href="resources.html">Further Information</a></dt>
+
+                          <dt><a href="bug-reporting.html">Bug Reporting
+                          Guidelines</a></dt>
+                        </dl>
+                      </dd>
+
+                      <dt>I. <a href="tutorial.html">Tutorial</a></dt>
+
+                      <dd>
+                        <dl>
+                          <dt>1. <a href="tutorial-start.html">Getting
+                          Started</a></dt>
+
+                          <dt>2. <a href="tutorial-sql.html">The <acronym class="ACRONYM">SQL</acronym> Language</a></dt>
+
+                          <dt>3. <a href="tutorial-advanced.html">Advanced
+                          Features</a></dt>
+                        </dl>
+                      </dd>
+
+                      <dt>II. <a href="sql.html">The SQL Language</a></dt>
+
+                      <dd>
+                        <dl>
+                          <dt>4. <a href="sql-syntax.html">SQL Syntax</a></dt>
+
+                          <dt>5. <a href="ddl.html">Data Definition</a></dt>
+
+                          <dt>6. <a href="dml.html">Data Manipulation</a></dt>
+
+                          <dt>7. <a href="queries.html">Queries</a></dt>
+
+                          <dt>8. <a href="datatype.html">Data Types</a></dt>
+
+                          <dt>9. <a href="functions.html">Functions and
+                          Operators</a></dt>
+
+                          <dt>10. <a href="typeconv.html">Type Conversion</a></dt>
+
+                          <dt>11. <a href="indexes.html">Indexes</a></dt>
+
+                          <dt>12. <a href="textsearch.html">Full Text
+                          Search</a></dt>
+
+                          <dt>13. <a href="mvcc.html">Concurrency Control</a></dt>
+
+                          <dt>14. <a href="performance-tips.html">Performance
+                          Tips</a></dt>
+                        </dl>
+                      </dd>
+
+                      <dt>III. <a href="admin.html">Server Administration</a></dt>
+
+                      <dd>
+                        <dl>
+                          <dt>15. <a href="installation.html">Installation from
+                          Source Code</a></dt>
+
+                          <dt>16. <a href="install-windows.html">Installation from
+                          Source Code on <span class="PRODUCTNAME">Windows</span></a></dt>
+
+                          <dt>17. <a href="runtime.html">Server Setup and
+                          Operation</a></dt>
+
+                          <dt>18. <a href="runtime-config.html">Server
+                          Configuration</a></dt>
+
+                          <dt>19. <a href="client-authentication.html">Client
+                          Authentication</a></dt>
+
+                          <dt>20. <a href="user-manag.html">Database Roles and
+                          Privileges</a></dt>
+
+                          <dt>21. <a href="managing-databases.html">Managing
+                          Databases</a></dt>
+
+                          <dt>22. <a href="charset.html">Localization</a></dt>
+
+                          <dt>23. <a href="maintenance.html">Routine Database
+                          Maintenance Tasks</a></dt>
+
+                          <dt>24. <a href="backup.html">Backup and Restore</a></dt>
+
+                          <dt>25. <a href="high-availability.html">High
+                          Availability, Load Balancing, and Replication</a></dt>
+
+                          <dt>26. <a href="recovery-config.html">Recovery
+                          Configuration</a></dt>
+
+                          <dt>27. <a href="monitoring.html">Monitoring Database
+                          Activity</a></dt>
+
+                          <dt>28. <a href="diskusage.html">Monitoring Disk
+                          Usage</a></dt>
+
+                          <dt>29. <a href="wal.html">Reliability and the
+                          Write-Ahead Log</a></dt>
+
+                          <dt>30. <a href="regress.html">Regression Tests</a></dt>
+                        </dl>
+                      </dd>
+
+                      <dt>IV. <a href="client-interfaces.html">Client
+                      Interfaces</a></dt>
+
+                      <dd>
+                        <dl>
+                          <dt>31. <a href="libpq.html"><span class="APPLICATION">libpq</span> - C Library</a></dt>
+
+                          <dt>32. <a href="largeobjects.html">Large
+                          Objects</a></dt>
+
+                          <dt>33. <a href="ecpg.html"><span class="APPLICATION">ECPG</span> - Embedded <acronym class="ACRONYM">SQL</acronym> in C</a></dt>
+
+                          <dt>34. <a href="information-schema.html">The Information
+                          Schema</a></dt>
+                        </dl>
+                      </dd>
+
+                      <dt>V. <a href="server-programming.html">Server
+                      Programming</a></dt>
+
+                      <dd>
+                        <dl>
+                          <dt>35. <a href="extend.html">Extending <acronym class="ACRONYM">SQL</acronym></a></dt>
+
+                          <dt>36. <a href="triggers.html">Triggers</a></dt>
+
+                          <dt>37. <a href="rules.html">The Rule System</a></dt>
+
+                          <dt>38. <a href="xplang.html">Procedural
+                          Languages</a></dt>
+
+                          <dt>39. <a href="plpgsql.html"><span class="APPLICATION">PL/pgSQL</span> - <acronym class="ACRONYM">SQL</acronym> Procedural Language</a></dt>
+
+                          <dt>40. <a href="pltcl.html">PL/Tcl - Tcl Procedural
+                          Language</a></dt>
+
+                          <dt>41. <a href="plperl.html">PL/Perl - Perl Procedural
+                          Language</a></dt>
+
+                          <dt>42. <a href="plpython.html">PL/Python - Python
+                          Procedural Language</a></dt>
+
+                          <dt>43. <a href="spi.html">Server Programming
+                          Interface</a></dt>
+                        </dl>
+                      </dd>
+
+                      <dt>VI. <a href="reference.html">Reference</a></dt>
+
+                      <dd>
+                        <dl>
+                          <dt>I. <a href="sql-commands.html">SQL Commands</a></dt>
+
+                          <dt>II. <a href="reference-client.html">PostgreSQL Client
+                          Applications</a></dt>
+
+                          <dt>III. <a href="reference-server.html">PostgreSQL
+                          Server Applications</a></dt>
+                        </dl>
+                      </dd>
+
+                      <dt>VII. <a href="internals.html">Internals</a></dt>
+
+                      <dd>
+                        <dl>
+                          <dt>44. <a href="overview.html">Overview of PostgreSQL
+                          Internals</a></dt>
+
+                          <dt>45. <a href="catalogs.html">System Catalogs</a></dt>
+
+                          <dt>46. <a href="protocol.html">Frontend/Backend
+                          Protocol</a></dt>
+
+                          <dt>47. <a href="source.html">PostgreSQL Coding
+                          Conventions</a></dt>
+
+                          <dt>48. <a href="nls.html">Native Language
+                          Support</a></dt>
+
+                          <dt>49. <a href="plhandler.html">Writing A Procedural
+                          Language Handler</a></dt>
+
+                          <dt>50. <a href="geqo.html">Genetic Query
+                          Optimizer</a></dt>
+
+                          <dt>51. <a href="indexam.html">Index Access Method
+                          Interface Definition</a></dt>
+
+                          <dt>52. <a href="gist.html">GiST Indexes</a></dt>
+
+                          <dt>53. <a href="gin.html">GIN Indexes</a></dt>
+
+                          <dt>54. <a href="storage.html">Database Physical
+                          Storage</a></dt>
+
+                          <dt>55. <a href="bki.html"><acronym class="ACRONYM">BKI</acronym> Backend Interface</a></dt>
+
+                          <dt>56. <a href="planner-stats-details.html">How the
+                          Planner Uses Statistics</a></dt>
+                        </dl>
+                      </dd>
+
+                      <dt>VIII. <a href="appendixes.html">Appendixes</a></dt>
+
+                      <dd>
+                        <dl>
+                          <dt>A. <a href="errcodes-appendix.html"><span class="PRODUCTNAME">PostgreSQL</span> Error Codes</a></dt>
+
+                          <dt>B. <a href="datetime-appendix.html">Date/Time
+                          Support</a></dt>
+
+                          <dt>C. <a href="sql-keywords-appendix.html"><acronym class="ACRONYM">SQL</acronym> Key Words</a></dt>
+
+                          <dt>D. <a href="features.html">SQL Conformance</a></dt>
+
+                          <dt>E. <a href="release.html">Release Notes</a></dt>
+
+                          <dt>F. <a href="contrib.html">Additional Supplied
+                          Modules</a></dt>
+
+                          <dt>G. <a href="external-projects.html">External
+                          Projects</a></dt>
+
+                          <dt>H. <a href="sourcerepo.html">The Source Code
+                          Repository</a></dt>
+
+                          <dt>I. <a href="docguide.html">Documentation</a></dt>
+
+                          <dt>J. <a href="acronyms.html">Acronyms</a></dt>
+                        </dl>
+                      </dd>
+
+                      <dt><a href="biblio.html">Bibliography</a></dt>
+
+                      <dt><a href="bookindex.html">Index</a></dt>
+                    </dl>
+                  </div>
+                </div>
+
+                </div>
+
+
+							</article>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer" class="container">
+			<div class="row 200%">
+				<div class="12u">
+
+					<!-- CONTACT -->
+					<section>
+						<h2 class="major"><span>Connect with the PostgreSQL Community</span></h2>
+						<ul class="contact">
+							<li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
+							<li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+							<li><a class="icon fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+							<li><a class="icon fa-github" href="#"><span class="label">GitHub</span></a></li>
+							<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
+						</ul>
+					</section>
+					<!-- END CONTACT -->
+				</div>
+			</div>
+
+			<!-- Copyright -->
+			<div id="copyright">
+				<ul class="menu">
+					<li>© Copyright © 1996-2015 The PostgreSQL Global Development Group</li>
+				</ul>
+			</div>
+
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.dropotron.min.js"></script>
+	<script src="../assets/js/skel.min.js"></script>
+	<script src="../assets/js/skel-viewport.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="../assets/js/main.js"></script>
+</body>
+</html>
