@@ -55,6 +55,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 }
 
 table, th, td {
+    text-align: left;
     border-collapse: collapse;
     border-spacing: 3em;
     border: 1px solid black;
