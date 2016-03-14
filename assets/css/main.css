@@ -83,12 +83,25 @@ body {
 
 .color {
     background-color: #fff;
-    padding: 0 0 3em 0;
+    padding: 2em 0 3em 0;
 }
 
 .coloralt {
     background-color: #e7eae8;
-    padding: 0 5px 3em 5px;
+    padding: 3em 3em 4em 4em;
+    border-radius: 1em;
+}
+
+.coloralt h3 {
+    font-size: 1.1em;
+}
+
+.coloralt .row {
+    margin: 0;
+}
+
+.emailInput {
+    padding-right: 1em;
 }
 
 
@@ -1614,8 +1627,12 @@ table.default thead {
   	}
 
 	  #navPanel .depth-0 {
-		    color: #fff;
+		    color: #888;
   	}
+
+    #navPanel .depth-0:hover {
+        color: #fff;
+    }
 
   	body.navPanel-visible #page-wrapper {
 	    	-moz-transform: translateX(275px);
@@ -1804,6 +1821,10 @@ h3.major.no-margin {
 	  border: solid 2px #e7eae8;
 }
 
+.styledInput[name="search"] {
+    width: 98%;
+    height: 3.6em;
+}
 
 /* #MAILING LISTS SEARCH & SUBMIT FUNCTIONALITY */
 
