@@ -1,0 +1,561 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>PostgreSQL - Security</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/button.css" />
+	<link rel="stylesheet" href="../assets/css/containers.css" />
+	<link rel="stylesheet" href="../assets/css/copyright.css" />
+	<link rel="stylesheet" href="../assets/css/forms.css" />
+	<link rel="stylesheet" href="../assets/css/grid.css" />
+	<link rel="stylesheet" href="../assets/css/images.css" />
+	<link rel="stylesheet" href="../assets/css/jcarousel.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jcarousel.min.js"></script>
+	<script src="../assets/js/jcarousel-responsive.js"></script>
+</head>
+<body>
+	<div id="logo" style="display:none;">Postgresql</div>
+	<div id="page-wrapper">
+
+		<!-- Header -->
+
+		<nav id="nav">
+			<ul>
+				<li><span class="header"><img src="../images/Postgresql_elephant.svg" alt="" /></span></li>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../about/about.html">About</a></li>
+				<li><a href="../download/download.html">Download</a></li>
+				<li class="current"><a href="../documentation/documentation.html">Documentation</a></li>
+				<li><a href="../community/community.html">Community</a></li>
+				<li><a href="../support/support.html">Support</a></li>
+				<li><a href="../login/login.html">Login</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main-wrapper-about">
+			<div id="main" class="container">
+				<div class="row padding-left-mobile">
+					<div class="2u 12u(mobile)">
+						<div class="sidebar">
+
+							<!-- Sidebar -->
+
+							<!-- Related Links -->
+							<section>
+								<h2 class="major"><span>Quick Links</span></h2>
+								<ul class="about ul">
+									<li><a href="../documentation/documentation.html">Documentation</a></li>
+									<li><a href="../documentation/manuals.html">Manuals</a></li>
+                  <li><a href="../documentation/security.html">Security</a></li>
+                  <li><a href="../documentation/whats_new.html">What's New?</a></li>
+                  <li><a href="../documentation/faq.html">FAQ</a></li>
+                  <li><a href="../documentation/books.html">Books</a></li>
+                  <li><a href="../documentation/wiki.html">Wiki</a></li>
+								</ul>
+							</section>
+
+						</div>
+					</div>
+					<div class="10u 12u(mobile) important(mobile)">
+						<div class="content content-right">
+
+							<!-- Content -->
+
+							<article class="box page-content">
+
+								<header>
+									<h2>Security <span class="header images"><img src="../images/security.svg" alt="" /></span></h2>
+								</header>
+
+								<section>
+									<h3 class="major"><span>Security Information</span></h3>
+
+                  <p>
+                  If you wish to report a new security vulnerability in PostgreSQL, please
+                  send an email to
+                  <a href="mailto:security@postgresql.org">security@postgresql.org</a>.
+                  For reporting non-security bugs, please see the <a href="/support/submitbug">Report a Bug</a> page.
+                  </p>
+
+                  <p>
+
+                  The PostgreSQL Global Development Group (PGDG) takes security seriously,
+                  allowing our users to place their trust in the web sites and applications
+                  built around PostgreSQL. Our approach covers fail-safe configuration options,
+                  a secure and robust database server as well as good integration with other
+                  security infrastructure software.
+                  </p>
+
+                  <p>
+                  PostgreSQL security updates are primarily made available as <a href="/support/versioning">minor version</a>
+                  upgrades. You are always advised to use the latest minor version available,
+                  as it will likely also contain other non-security related fixes. All known
+                  security issues are always fixed in the next major release, when it comes out.
+                  </p>
+
+                  <p>
+                  PGDG believes that accuracy, completeness and availability of security
+                  information is essential for our users. We choose to pool all information on
+                  this one page, allowing easy searching for vulnerabilities by a range of
+                  criteria.
+                  </p>
+
+                  <p>
+                  The following table lists all known security issues.
+                  Please note that versions prior to 9.1 are no longer
+                  supported.  An archive of vulnerabilities found only in unsupported
+                  versions is
+                  <a href="/support/security_archive">on our Security Archive page</a>,
+                  but vulnerability information on those versions is no longer updated,
+                  nor are vulnerabilities patched.
+                  </p>
+
+                  <p>
+                  Vulnerabilities list which major releases they were present
+                  in, and which version they are fixed in for each. If the vulnerability
+                  was exploitable without a valid login, this is also stated. They also
+                  list a vulnerability class, but we urge all users to read the description
+                  to determine if the bug affects specific installations or not.
+                  </p>
+
+                  <div class="tblBasic">
+                   <table border="0" cellpadding="0" cellspacing="0" class="tblBasicGrey">
+                    <tbody><tr>
+                     <th class="colFirst">Reference</th>
+                     <th class="colMid">Affected<br>versions</th>
+                     <th class="colMid">Fixed in</th>
+                     <th class="colMid"><a href="#comp">Component</a></th>
+                     <th class="colMid"><a href="#cls">Class</a></th>
+                     <th class="colLast">Description</th>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0773">CVE-2016-0773</a></td>
+                     <td class="colMid">9.5, 9.4, 9.3, 9.2, 9.1</td>
+                     <td class="colMid">9.5.1, 9.4.6, 9.3.11, 9.2.15, 9.1.20</td>
+                     <td class="colMid">core server</td>
+                     <td class="colMid">C</td>
+                     <td class="colLast">Unchecked regex can crash the server</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5289">CVE-2015-5289</a></td>
+                     <td class="colMid">9.4, 9.3</td>
+                     <td class="colMid">9.4.5, 9.3.10</td>
+                     <td class="colMid">core server</td>
+                     <td class="colMid">B</td>
+                     <td class="colLast">Unchecked JSON input can crash the server</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5288">CVE-2015-5288</a></td>
+                     <td class="colMid">9.4, 9.3, 9.2, 9.1, 9.0</td>
+                     <td class="colMid">9.4.5, 9.3.10, 9.2.14, 9.1.19, 9.0.23</td>
+                     <td class="colMid">contrib module</td>
+                     <td class="colMid">C</td>
+                     <td class="colLast">Memory leak in crypt() function.</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3165">CVE-2015-3165</a></td>
+                     <td class="colMid">9.4, 9.3, 9.2, 9.1, 9.0</td>
+                     <td class="colMid">9.4.2, 9.3.7, 9.2.11, 9.1.16, 9.0.20</td>
+                     <td class="colMid">core server</td>
+                     <td class="colMid">B</td>
+                     <td class="colLast">Double "free" after authentication timeout</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3166">CVE-2015-3166</a></td>
+                     <td class="colMid">9.4, 9.3, 9.2, 9.1, 9.0</td>
+                     <td class="colMid">9.4.2, 9.3.7, 9.2.11, 9.1.16, 9.0.20</td>
+                     <td class="colMid">core server, client</td>
+                     <td class="colMid">D</td>
+                     <td class="colLast">Unanticipated errors from the standard library.</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3167">CVE-2015-3167</a></td>
+                     <td class="colMid">9.4, 9.3, 9.2, 9.1, 9.0</td>
+                     <td class="colMid">9.4.2, 9.3.7, 9.2.11, 9.1.16, 9.0.20</td>
+                     <td class="colMid">contrib module</td>
+                     <td class="colMid">C</td>
+                     <td class="colLast">pgcrypto has multiple error messages for decryption with an incorrect key.</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0241">CVE-2015-0241</a></td>
+                     <td class="colMid">9.4, 9.3, 9.2, 9.1, 9.0</td>
+                     <td class="colMid">9.4.1, 9.3.6, 9.2.10, 9.1.15, 9.0.19</td>
+                     <td class="colMid">core server</td>
+                     <td class="colMid">C</td>
+                     <td class="colLast">Buffer overruns in "to_char" functions.</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0242">CVE-2015-0242</a></td>
+                     <td class="colMid">9.4, 9.3, 9.2, 9.1, 9.0</td>
+                     <td class="colMid">9.4.1, 9.3.6, 9.2.10, 9.1.15, 9.0.19</td>
+                     <td class="colMid">core server</td>
+                     <td class="colMid">C</td>
+                     <td class="colLast">Buffer overrun in replacement printf family of functions.</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0243">CVE-2015-0243</a></td>
+                     <td class="colMid">9.4, 9.3, 9.2, 9.1, 9.0</td>
+                     <td class="colMid">9.4.1, 9.3.6, 9.2.10, 9.1.15, 9.0.19</td>
+                     <td class="colMid">contrib module</td>
+                     <td class="colMid">C</td>
+                     <td class="colLast">Memory errors in functions in the pgcrypto extension.</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0244">CVE-2015-0244</a></td>
+                     <td class="colMid">9.4, 9.3, 9.2, 9.1, 9.0</td>
+                     <td class="colMid">9.4.1, 9.3.6, 9.2.10, 9.1.15, 9.0.19</td>
+                     <td class="colMid">core server</td>
+                     <td class="colMid">C</td>
+                     <td class="colLast">An error in extended protocol message reading.</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8161">CVE-2014-8161</a></td>
+                     <td class="colMid">9.4, 9.3, 9.2, 9.1, 9.0</td>
+                     <td class="colMid">9.4.1, 9.3.6, 9.2.10, 9.1.15, 9.0.19</td>
+                     <td class="colMid">core server</td>
+                     <td class="colMid">C</td>
+                     <td class="colLast">Constraint violation errors can cause display of values in columns which the user would not normally have rights to see.</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0067">CVE-2014-0067</a></td>
+                     <td class="colMid">9.4, 9.3, 9.2, 9.1, 9.0</td>
+                     <td class="colMid">9.4.1, 9.3.6, 9.2.10, 9.1.15, 9.0.19</td>
+                     <td class="colMid">other</td>
+                     <td class="colMid">N/A</td>
+                     <td class="colLast">Unauthenticated users may gain access to the database server during "make check". <a href="https://wiki.postgresql.org/wiki/20140220securityrelease">Details</a>.</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0060">CVE-2014-0060</a></td>
+                     <td class="colMid">9.3, 9.2, 9.1, 9.0, 8.4</td>
+                     <td class="colMid">9.3.3, 9.2.7, 9.1.12, 9.0.16, 8.4.20</td>
+                     <td class="colMid">core server</td>
+                     <td class="colMid">C</td>
+                     <td class="colLast">SET ROLE bypasses lack of ADMIN OPTION. <a href="https://wiki.postgresql.org/wiki/20140220securityrelease">Details</a></td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0061">CVE-2014-0061</a></td>
+                     <td class="colMid">9.3, 9.2, 9.1, 9.0, 8.4</td>
+                     <td class="colMid">9.3.3, 9.2.7, 9.1.12, 9.0.16, 8.4.20</td>
+                     <td class="colMid">core server</td>
+                     <td class="colMid">C</td>
+                     <td class="colLast">Privilege escalation via calls to validator functions. <a href="https://wiki.postgresql.org/wiki/20140220securityrelease">Details</a></td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0062">CVE-2014-0062</a></td>
+                     <td class="colMid">9.3, 9.2, 9.1, 9.0, 8.4</td>
+                     <td class="colMid">9.3.3, 9.2.7, 9.1.12, 9.0.16, 8.4.20</td>
+                     <td class="colMid">core server</td>
+                     <td class="colMid">C</td>
+                     <td class="colLast">Race condition in CREATE INDEX allows for privilege escalation. <a href="https://wiki.postgresql.org/wiki/20140220securityrelease">Details</a></td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0063">CVE-2014-0063</a></td>
+                     <td class="colMid">9.3, 9.2, 9.1, 9.0, 8.4</td>
+                     <td class="colMid">9.3.3, 9.2.7, 9.1.12, 9.0.16, 8.4.20</td>
+                     <td class="colMid">core server, ECPG</td>
+                     <td class="colMid">C</td>
+                     <td class="colLast">Potential buffer overruns in datetime input/output. <a href="https://wiki.postgresql.org/wiki/20140220securityrelease">Details</a></td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0064">CVE-2014-0064</a></td>
+                     <td class="colMid">9.3, 9.2, 9.1, 9.0, 8.4</td>
+                     <td class="colMid">9.3.3, 9.2.7, 9.1.12, 9.0.16, 8.4.20</td>
+                     <td class="colMid">core server, contrib</td>
+                     <td class="colMid">C</td>
+                     <td class="colLast">Potential buffer overruns due to integer overflow in size calculations. <a href="https://wiki.postgresql.org/wiki/20140220securityrelease">Details</a></td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0065">CVE-2014-0065</a></td>
+                     <td class="colMid">9.3, 9.2, 9.1, 9.0, 8.4</td>
+                     <td class="colMid">9.3.3, 9.2.7, 9.1.12, 9.0.16, 8.4.20</td>
+                     <td class="colMid">core server</td>
+                     <td class="colMid">C</td>
+                     <td class="colLast">Potential buffer overruns of fixed-size buffers. <a href="https://wiki.postgresql.org/wiki/20140220securityrelease">Details</a></td>
+                    </tr>
+
+                    <tr valign="top">
+                    <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0066">CVE-2014-0066</a></td>
+                     <td class="colMid">9.3, 9.2, 9.1, 9.0, 8.4</td>
+                     <td class="colMid">9.3.3, 9.2.7, 9.1.12, 9.0.16, 8.4.20</td>
+                     <td class="colMid">contrib module</td>
+                     <td class="colMid">D</td>
+                     <td class="colLast">Potential null pointer dereference crash when crypt(3) returns NULL. <a href="https://wiki.postgresql.org/wiki/20140220securityrelease">Details</a></td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1899">CVE-2013-1899</a></td>
+                     <td class="colMid">9.2, 9.1, 9.0</td>
+                     <td class="colMid">9.2.4, 9.1.9, 9.0.13</td>
+                     <td class="colMid">core server</td>
+                     <td class="colMid">A</td>
+                     <td class="colLast">A connection request containing a database name that begins with "-" may be crafted to damage or destroy files within a server's data directory</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1900">CVE-2013-1900</a></td>
+                     <td class="colMid">9.2, 9.1, 9.0, 8.4</td>
+                     <td class="colMid">9.2.4, 9.1.9, 9.0.13, 8.4.17</td>
+                     <td class="colMid">contrib module</td>
+                     <td class="colMid">C</td>
+                     <td class="colLast">Random numbers generated by contrib/pgcrypto functions may be easy for another database user to guess</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1901">CVE-2013-1901</a></td>
+                     <td class="colMid">9.2, 9.1</td>
+                     <td class="colMid">9.2.4, 9.1.9</td>
+                     <td class="colMid">core server</td>
+                     <td class="colMid">D</td>
+                     <td class="colLast">An unprivileged user can run commands that could interfere with in-progress backups.</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1902">CVE-2013-1902</a></td>
+                     <td class="colMid">9.2, 9.1, 9.0, 8.4, 8.3</td>
+                     <td class="colMid">9.2.4-1, 9.1.9-1, 9.0.13-1, 8.4.17-1, 8.3.23-3</td>
+                     <td class="colMid">packaging</td>
+                     <td class="colMid">C</td>
+                     <td class="colLast">EnterpriseDB's installers for Linux and Mac OS X created a directory and file in /tmp with predictable names.</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1903">CVE-2013-1903</a></td>
+                     <td class="colMid">9.2, 9.1, 9.0, 8.4, 8.3</td>
+                     <td class="colMid">9.2.4-1, 9.1.9-1, 9.0.13-1, 8.4.17-1, 8.3.23-3</td>
+                     <td class="colMid">packaging</td>
+                     <td class="colMid">C</td>
+                     <td class="colLast">EnterpriseDB's installers for Linux and Mac OS X passed the database superuser password to a script in an insecure fashion.</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0255">CVE-2013-0255</a></td>
+                     <td class="colMid">9.2, 9.1, 9.0, 8.4, 8.3</td>
+                     <td class="colMid">9.2.3, 9.1.8, 9.0.12, 8.4.16, 8.3.23</td>
+                     <td class="colMid">core server</td>
+                     <td class="colMid">D</td>
+                     <td class="colLast">executing enum_recv() with wrong parameters crashes server</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3489">CVE-2012-3489</a></td>
+                     <td class="colMid">9.1, 9.0, 8.4, 8.3</td>
+                     <td class="colMid">9.1.5, 9.0.9, 8.4.13, 8.3.20</td>
+                     <td class="colMid">core server</td>
+                     <td class="colMid">C</td>
+                     <td class="colLast">xml_parse() DTD validation can be used to read arbitrary files</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3488">CVE-2012-3488</a></td>
+                     <td class="colMid">9.1, 9.0, 8.4, 8.3</td>
+                     <td class="colMid">9.1.5, 9.0.9, 8.4.13, 8.3.20</td>
+                     <td class="colMid">contrib module</td>
+                     <td class="colMid">C</td>
+                     <td class="colLast">contrib/xml2's xslt_process() can be used to read and write arbitrary files</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2143">CVE-2012-2143</a></td>
+                     <td class="colMid">9.1, 9.0, 8.4, 8.3</td>
+                     <td class="colMid">9.1.4, 9.0.8, 8.4.12, 8.3.19</td>
+                     <td class="colMid">contrib module</td>
+                     <td class="colMid">C</td>
+                     <td class="colLast">Passwords containing the byte 0x80 passed to the crypt() function in pgcrypto are incorrectly truncated if DES encryption was used</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2655">CVE-2012-2655</a></td>
+                     <td class="colMid">9.1, 9.0, 8.4, 8.3</td>
+                     <td class="colMid">9.1.4, 9.0.8, 8.4.12, 8.3.19</td>
+                     <td class="colMid">core server</td>
+                     <td class="colMid">D</td>
+                     <td class="colLast">SECURITY DEFINER and SET attributes on procedural call handlers are not ignored and can be used to crash the server</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0866">CVE-2012-0866</a></td>
+                     <td class="colMid">9.1, 9.0, 8.4, 8.3</td>
+                     <td class="colMid">9.1.3, 9.0.7, 8.4.11, 8.3.18</td>
+                     <td class="colMid">core server</td>
+                     <td class="colMid">C</td>
+                     <td class="colLast">Permissions on a function called by a trigger are not properly checked.</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0867">CVE-2012-0867</a></td>
+                     <td class="colMid">9.1, 9.0, 8.4</td>
+                     <td class="colMid">9.1.3, 9.0.7, 8.4.11</td>
+                     <td class="colMid">core server, limited deployments</td>
+                     <td class="colMid">A</td>
+                     <td class="colLast">SSL certificate name checks are truncated to 32 characters, allowing connection spoofing under some circumstances when using third party certificate authorities.</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0868">CVE-2012-0868</a></td>
+                     <td class="colMid">9.1, 9.0, 8.4, 8.3</td>
+                     <td class="colMid">9.1.3, 9.0.7, 8.4.11, 8.3.18</td>
+                     <td class="colMid">core server</td>
+                     <td class="colMid">C</td>
+                     <td class="colLast">Line breaks in object names can be exploited to execute arbitrary SQL when reloading a pg_dump file.</td>
+                    </tr>
+
+                   </tbody></table>
+                  </div>
+
+                  <a name="cls"></a>
+                  <h3 class="major"><span>Vulnerability Classes</span></h3>
+                  <p>
+                  The following vulnerability class references are used in the above table:
+                  </p>
+
+                  <div class="tblBasic">
+                   <table border="0" cellpadding="0" cellspacing="0" class="tblBasicGrey">
+                    <tbody><tr>
+                     <th class="colFirst">Class</th>
+                     <th class="colLast">Description</th>
+
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst">A</td>
+                     <td class="colLast">A vulnerability that is exploitable for privilege escalation <i>without</i> requiring a prior login.</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst">B</td>
+                     <td class="colLast">A vulnerability that is exploitable for denial-of-service <i>without</i> requiring a prior login.</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst">C</td>
+
+                     <td class="colLast">A vulnerabilty that is exploitable for privilege escalation, but requiring a valid prior login.</td>
+                    </tr>
+
+                    <tr valign="top" class="lastrow">
+                     <td class="colFirst">D</td>
+                     <td class="colLast">A vulnerability that is exploitable for denial-of-service, but requiring a valid prior login.</td>
+                    </tr>
+
+                   </tbody></table>
+
+                  </div>
+
+                  <a name="comp"></a>
+                  <h3 class="major"><span>Components</span></h3>
+                  <p>
+                  The following component references are used in the above table:
+                  </p>
+
+                  <div class="tblBasic">
+                   <table border="0" cellpadding="0" cellspacing="0" class="tblBasicGrey">
+                    <tbody><tr>
+                     <th class="colFirst">Component</th>
+
+                     <th class="colLast">Description</th>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst">core server</td>
+                     <td class="colLast">This vulnerability exists in the core server product.</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst">client</td>
+                     <td class="colLast">This vulnerability exists in a client library or client application only.</td>
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst">contrib module</td>
+                     <td class="colLast">This vulnerability exists in a contrib module. Contrib modules are not installed by default when PostgreSQL is installed from source. They may be installed by binary packages.</td>
+
+                    </tr>
+
+                    <tr valign="top">
+                     <td class="colFirst">client contrib module</td>
+                     <td class="colLast">This vulnerability exists in a contrib module used on the client only.</td>
+                    </tr>
+
+                    <tr valign="top" class="lastrow">
+                     <td class="colFirst">packaging</td>
+                     <td class="colLast">This vulnerability exists in PostgreSQL binary packaging, e.g. an installer or RPM.</td>
+                    </tr>
+
+                   </tbody></table>
+                  </div>
+
+								</section>
+
+							</article>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer" class="container">
+			<div class="row 200%">
+				<div class="12u">
+
+					<!-- CONTACT -->
+					<section>
+						<h2 class="major"><span>Connect with the PostgreSQL Community</span></h2>
+						<ul class="contact">
+							<li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
+							<li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+							<li><a class="icon fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+							<li><a class="icon fa-github" href="#"><span class="label">GitHub</span></a></li>
+							<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
+						</ul>
+					</section>
+					<!-- END CONTACT -->
+				</div>
+			</div>
+
+			<!-- Copyright -->
+			<div id="copyright">
+				<ul class="menu">
+					<li>© Copyright © 1996-2015 The PostgreSQL Global Development Group</li>
+				</ul>
+			</div>
+
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.dropotron.min.js"></script>
+	<script src="../assets/js/skel.min.js"></script>
+	<script src="../assets/js/skel-viewport.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="../assets/js/main.js"></script>
+</body>
+</html>
