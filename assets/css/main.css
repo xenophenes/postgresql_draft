@@ -733,6 +733,7 @@ table.default thead {
 
 		.box.feature {
 				text-align: center;
+        padding: 0 0 1em 0;
 		}
 
 		.box.feature > div {
