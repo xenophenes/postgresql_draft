@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title>PostgreSQL - IRC</title>
+	<title>PostgreSQL - Development</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -71,33 +71,89 @@
 							<article class="box page-content">
 
 								<header>
-									<h2>IRC <span class="header images"><img src="../images/irc.svg" alt="" /></span></h2>
+									<h2>Development Resources <span class="header images"><img src="../images/development.svg" alt="" /></span></h2>
 								</header>
 
                 <section>
-                  <p>If you have a problem that you cannot resolve, you might want to try asking a question in our IRC channel
-                  <a href="irc://irc.freenode.net/postgresql">#postgresql on irc.freenode.net</a>. The channel has many active users,
-                  and it is an entry into participating in the wider PostgreSQL community.  Don't forget to consult
-                  the <a href="../documentation">documentation</a> about your problem before asking your question.</p>
+                  <p>The following are resources that may be of interest to the PostgreSQL community.</br>
+                  Please send appropriate links to <a href="mailto:webmaster@postgresql.org">webmaster@postgresql.org</a> for possible inclusion on this page.</p>
 
-                  <h3 class="major"><span>Language Specific Channels</span></h3>
+                  <h3 class="major"><span>Documentation</span></h3>
                   <ul>
-                    <li><a href="irc://irc.freenode.net/postgresql-br">Brazilian Portuguese</a></li>
-                    <li><a href="irc://irc.freenode.net/postgresqlfr">French</a></li>
-                    <li><a href="irc://irc.freenode.net/postgresql-it">Italian</a></li>
-                    <li><a href="irc://irc.freenode.net/postgresql-es">Spanish</a></li>
-                    <li><a href="irc://irc.freenode.net/postgresql-de">German</a></li>
-                    <li><a href="irc://irc.freenode.net/postgresql-tr">Turkish</a></li>
+                      <li><a href="https://wiki.postgresql.org/wiki/Developer_FAQ">Frequently Asked Questions for Developers</a></li>
+                      <li><a href="/docs/devel/static">Developer Version of The Docs</a> (<a href="http://buildfarm.postgresql.org/cgi-bin/show_stage_log.pl?nm=guaibasaurus&amp;dt=latest&amp;stg=make-doc">build log</a>)</li>
+                  </ul>
+                  
+                  <h3 class="major"><span>Community Resources</span></h3>
+                  <ul>
+                  <li><a href="http://planet.postgresql.org/">Planet PostgreSQL</a>, a site dedicated to aggregating PostgreSQL related blogs.</li>
+                  <li><a href="https://wiki.postgresql.org">PostgreSQL Wiki</a>, our wiki, hosting user created content and development related information</li>
                   </ul>
 
-								  <h3 class="major"><span>Other PostgreSQL Related Projects</span></h3>
+                  <h3 class="major"><span>Roadmap</span></h3>
+                  <p>PostgreSQL is a non-commercial, all volunteer, free software project, and as
+                  such there is no formal list of feature requirements required for development.
+                  We really do follow the mantra of letting developers scratch their own itches.
+                  </br>
+
+                  The next release of PostgreSQL is planned to be the 9.6 release. A
+                  tentative schedule for this version has a release in the
+                  fourth quarter of 2016.</p>
+
+                  <p>While there are no formal requirements for each PostgreSQL release, there
+                  are several places you can look to find out more information on upcoming
+                  features:</p>
                   <ul>
-                  	<li><a href="irc://irc.freenode.net/pgadmin">pgAdmin</a> - Cross platform graphical administration</li>
-                  	<li><a href="irc://irc.freenode.net/plphp">PLphp</a> - Procedures and Functions in PHP</li>
-                  	<li><a href="irc://irc.freenode.net/postgis">PostGIS</a> -  Spatial objects for PostgreSQL</li>
-                  	<li><a href="irc://irc.freenode.net/slony">Slony</a> - FOSS PostgreSQL replication</li>
-                  	<li><a href="irc://irc.freenode.net/postgresql-eu">postgresql-eu</a> - European PostgreSQL Usergroup</li>
+                  	<li>General <a href="https://wiki.postgresql.org/wiki/Development_information">development information</a></dt>
+                  	<li>A wiki page about various aspects of the PostgreSQL development process</dd>
+                  	<li>Information about the current <a href="https://commitfest.postgresql.org/">commit fest</a></dt>
+                  	<li>An overview about the status on patches for the current commitfest</dd>
                   </ul>
+
+                  <h3 class="major"><span>Coding Access/Information</span></h3>
+                  <ul>
+                      <li><a href="http://git.postgresql.org/gitweb?p=postgresql.git">Web interface to the Source Code Repository</a></li>
+                      <li><a href="/docs/current/static/git.html">Information about the Source Code Repository</a></li>
+                      <li><a href="http://doxygen.postgresql.org/">Source Code Browser</a> (Doxygen)</li>
+                      <li><a href="/developer/backend/">Backend Flowchart</a></li>
+                      <li><a href="https://babel.postgresql.org/">Translating</a></li>
+                      <li><a href="https://wiki.postgresql.org/wiki/Developer_and_Contributor_Resources">Developer Section on wiki.postgresql.org</a></li>
+                  </ul>
+
+                  <h3 class="major"><span>Test Builds</span></h3>
+                  <ul>
+                      <li><a href="/developer/beta/">Current Beta release information</a></li>
+                      <li><a href="/ftp/snapshot/dev/">Download nightly code build</a></li>
+                      <li><a href="/download/snapshots">Download periodic binary builds</a></li>
+                      <li><a href="http://buildfarm.postgresql.org/">Distributed Build Farm</a></li>
+                  </ul>
+
+                  <h3 class="major"><span>QA and Performance</span></h3>
+                  <p>
+                  We have two performance labs. One is located in Portland Oregon at <a href="http://www.commandprompt.com">Command Prompt's</a> facility. The other is located in France at the OpenWide facility.
+                  These facilities are used for a wide range of tasks from DBT-style tests, to system monitoring and feature specific testing. You can review more information at the <a href="https://wiki.postgresql.org/wiki/Performances_QA_testing">Performance and QA testing wiki page.</a>
+                  </p>
+
+                  <h3 class="major"><span>Presentations</span></h3>
+                  <ul>
+                  	<li><a href="/files/developer/transactions.pdf">Transaction Processing in PostgreSQL</a> (From OSDN Oct 2000)</li>
+                  	<li><a href="/files/developer/tour.pdf">A Tour of PostgreSQL Internals</a> (From OSDN Oct 2000)</li>
+                  	<li><a href="/files/developer/history.pdf">History of PostgreSQL Open-Source Development</a> (From OSDN Oct 2000)</li>
+                  	<li><a href="/files/developer/internalpics.pdf">Database Internals Presentation</a> (From 2001)</li>
+                  	<li><a href="/files/developer/concurrency.pdf">PostgreSQL Concurrency Issues</a> (From OSCON 2002)</li>
+                  	<li><a href="/files/developer/optimizer.pdf">Recent PostgreSQL Optimizer Improvements (in 7.4)</a> (From OSCON 2003)</li>
+                  </ul>
+
+                  <h3 class="major"><span>External Resources</span></h3>
+                  <ul>
+                  <li><a href="http://www.pg-forum.de/">pg-forum.de</a>, a German PostgreSQL forum.</li>
+                  <li><a href="http://www.pgsql.ru/">PGSearch</a>, a fast search engine (powered by PostgreSQL &amp; TSearch2) indexing a number of PostgreSQL and PostgreSQL related websites.</li>
+                  </ul>
+
+                  <h3 class="major"><span>Google Summer of Code Program</span></h3>
+                  <p>The PostgreSQL Project is a proud participant in Google's Summer of Code program. If you are interested in working on a PostgreSQL related project, please check out our <a href="summerofcode.html">Summer of Code page.</a></p>
+
+
                 </section>
 
 							</article>
