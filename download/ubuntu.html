@@ -1,0 +1,259 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>PostgreSQL - Ubuntu Packages</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/button.css" />
+	<link rel="stylesheet" href="../assets/css/containers.css" />
+	<link rel="stylesheet" href="../assets/css/copyright.css" />
+	<link rel="stylesheet" href="../assets/css/forms.css" />
+	<link rel="stylesheet" href="../assets/css/grid.css" />
+	<link rel="stylesheet" href="../assets/css/images.css" />
+	<link rel="stylesheet" href="../assets/css/jcarousel.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jcarousel.min.js"></script>
+	<script src="../assets/js/jcarousel-responsive.js"></script>
+</head>
+<body>
+	<div id="logo" class="display:none;">Postgresql</div>
+	<div id="page-wrapper">
+
+		<!-- Header -->
+
+		<nav id="nav">
+			<ul>
+				<li><span class="header"><img src="../images/Postgresql_elephant.svg" alt="" /></span></li>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../about/about.html">About</a></li>
+				<li class="current"><a href="../download/download.html">Download</a></li>
+				<li><a href="../documentation/documentation.html">Documentation</a></li>
+				<li><a href="../community/community.html">Community</a></li>
+				<li><a href="../support/support.html">Support</a></li>
+				<li><a href="../login/login.html">Login</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main-wrapper-about">
+			<div id="main" class="container">
+				<div class="row padding-left-mobile">
+					<div class="2u 12u(mobile)">
+						<div class="sidebar">
+
+							<!-- Sidebar -->
+
+							<!-- Related Links -->
+							<section>
+								<h2 class="major"><span>Quick Links</span></h2>
+								<ul class="about ul">
+									<li><a href="../download/download.html">Downloads</a></li>
+									<li><a href="../download/openbsd.html">FreeBSD</a></li>
+									<li><a href="../download/openbsd.html">OpenBSD</a></li>
+									<li><a href="../download/redhat.html">Red Hat</a></li>
+									<li><a href="../download/debian.html">Debian</a></li>
+									<li><a href="../download/ubuntu.html">Ubuntu</a></li>
+									<li><a href="../download/suse.html">OpenSUSE</a></li>
+									<li><a href="../download/other.html">Other Linux</a></li>
+									<li><a href="../download/mac.html">Mac OS X</a></li>
+									<li><a href="../download/solaris.html">Solaris</a></li>
+									<li><a href="../download/windows.html">Windows</a></li>
+								</ul>
+							</section>
+
+						</div>
+					</div>
+					<div class="10u 12u(mobile) important(mobile)">
+						<div class="content content-right">
+
+							<!-- Content -->
+
+							<article class="box page-content">
+
+								<header>
+									<h2>Ubuntu Packages<span class="header images"><img src="../images/downloads.svg" alt="" /></span></h2>
+								</header>
+
+								<section>
+
+                  <p>
+                  PostgreSQL is available in all Ubuntu versions by default. However,
+                  Ubuntu "snapshots" a specific version of PostgreSQL that is then
+                  supported throughout the lifetime of that Ubuntu version. Other
+                  versions of PostgreSQL are available through the PostgreSQL apt
+                  repository.
+                  </p>
+                  <h3 class="major"><span>Included in distribution</span></h3>
+                  <p>
+                  Ubuntu includes PostgreSQL by default. To install PostgreSQL on
+                  Ubuntu, use the <i>apt-get</i> (or other apt-driving) command:
+                  </p>
+                  <code>
+                  apt-get install postgresql-9.4
+                  </code>
+                  </br>
+                  <p>
+                  The repository contains many different packages including third party
+                  addons. The most common and important packages are (substitute the
+                  version number as required):
+                  </p>
+                  <ul>
+                   <li>postgresql-client-9.4 - client libraries and client binaries</li>
+                   <li>postgresql-9.4 - core database server</li>
+                   <li>postgresql-contrib-9.4 - additional supplied modules</li>
+                   <li>libpq-dev - libraries and headers for C language frontend development</li>
+                   <li>postgresql-server-dev-9.4 - libraries and headers for C language backend development</li>
+                   <li>pgadmin3 - pgAdmin III graphical administration utility</li>
+                  </ul>
+
+                  <script type="text/javascript">
+                   <!--
+                   function updateSeries(select) {
+                    var deb = document.getElementById('series-deb');
+                    deb.innerHTML = select.value;
+                   }
+                   -->
+                  </script>
+
+                  <h3 class="major"><span>PostgreSQL Apt Repository</span></h3>
+                  <p>
+                  If the version included in your version of Ubuntu is not the one you want,
+                  you can use the PostgreSQL Apt Repository. This repository will integrate
+                  with your normal systems and patch management, and provide automatic
+                  updates for all supported versions of PostgreSQL throughout the support
+                  <a href="/support/versioning/">lifetime</a> of PostgreSQL.
+                  </p>
+                  <p>
+                  The PostgreSQL apt repository supports LTS versions of Ubuntu (12.04 and 14.04)
+                  on amd64 and i386 architectures as well as select non-LTS versions(15.10).
+                  While not fully supported, the packages often work on other non-LTS versions as well,
+                  by using the closest LTS version available.
+                  </p>
+                  <p>
+                  To use the apt repository, follow these steps:
+                  </p>
+                  <ul>
+                   <li>
+                    <select id="field.series" name="field.series" onchange="updateSeries(this);">
+                     <option selected="selected" value="YOUR_UBUNTU_VERSION_HERE">Choose your Ubuntu version</option>
+                     <option value="wily">Wily Werewolf (15.10)</option>
+                     <option value="trusty">Trusty (14.04)</option>
+                     <option value="precise">Precise (12.04)</option>
+                    </select>
+                   </li>
+                   </br>
+                   <li>Create the file <i>/etc/apt/sources.list.d/pgdg.list</i>, and add a line
+                   for the repository
+                   <code>deb http://apt.postgresql.org/pub/repos/apt/ <span id="series-deb">YOUR_UBUNTU_VERSION_HERE</span>-pgdg main</code>
+                   </li>
+                   </br>
+                   <li>Import the repository signing key, and update the package lists
+                     <code>
+                  wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | \<br>
+                  &nbsp;&nbsp;sudo apt-key add -<br>
+                  sudo apt-get update
+                     </code>
+                   </li>
+                  </ul>
+                  <p>
+                  For more information about the apt repository, including answers to frequent
+                  questions, please see the apt page on
+                  <a href="https://wiki.postgresql.org/wiki/Apt">the wiki</a>.
+                  </p>
+
+                  <h3 class="major"><span>Cross distribution packages</span></h3>
+                  <p>
+                  Generic RPM and DEB packages that provide a server-only distribution
+                  are avaliable for some 32 and 64-bit Linux distributions.  These
+                  packages provide a single set of binaries and consistent packaging
+                  across different Linux distributions.  They are designed for server
+                  installation where a GUI is not available and consistency across
+                  multiple distributions is a requirement.
+                  </p>
+                  <p>
+                  <a href="http://www.openscg.com/se/postgresql/packages.jsp">Download</a>
+                  the packages from OpenSCG for all supported versions.
+                  </p>
+
+                  <p>
+                  <i>Note:</i> The cross distribution packages do not fully integrate with
+                  the platform-specific packaging systems.
+                  </p>
+
+
+                  <h3 class="major"><span>Graphical installer</span></h3>
+                  <p>
+                  Installers are available for 32 and 64-bit Linux distributions
+                  and include PostgreSQL, pgAdmin and the StackBuilder utility for installation
+                  of additional packages.
+                  </p>
+                  <p>
+                  <a href="http://www.enterprisedb.com/products/pgdownload.do">Download</a>
+                  the installer from EnterpriseDB for all supported versions.
+                  </p>
+
+                  <p>
+                  <i>Note:</i> The installers do not integrate with
+                  platform-specific packaging systems.
+                  </p>
+
+
+                  <h3 class="major"><span>Build from source</span></h3>
+                  <p>
+                  The source code can be found in the main <a href="/ftp/source">file browser</a>.
+                  Instructions for building from source can be found in the
+                  <a href="/docs/current/static/installation.html">documentation</a>.
+                  </p>
+
+                </section>
+              </article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer" class="container">
+			<div class="row 200%">
+				<div class="12u">
+
+					<!-- CONTACT -->
+					<section>
+						<h2 class="major"><span>Connect with the PostgreSQL Community</span></h2>
+						<ul class="contact">
+							<li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
+							<li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+							<li><a class="icon fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+							<li><a class="icon fa-github" href="#"><span class="label">GitHub</span></a></li>
+							<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
+						</ul>
+					</section>
+					<!-- END CONTACT -->
+				</div>
+			</div>
+
+			<!-- Copyright -->
+			<div id="copyright">
+				<ul class="menu">
+					<li>© Copyright © 1996-2015 The PostgreSQL Global Development Group</li>
+				</ul>
+			</div>
+
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.dropotron.min.js"></script>
+	<script src="../assets/js/skel.min.js"></script>
+	<script src="../assets/js/skel-viewport.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="../assets/js/main.js"></script>
+</body>
+</html>

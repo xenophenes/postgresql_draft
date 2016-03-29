@@ -59,9 +59,10 @@ blockquote:before, blockquote:after, q:before, q:after {
 table, th, td {
     text-align: left;
     border-collapse: collapse;
-    border-spacing: 3em;
-    border: 1px solid black;
-    padding: 1em 1em;
+    padding: 1em;
+    margin: 1ex 0;
+    background: #f7f7f7;
+    border: 1px solid #cfcfcf;
 }
 
 body {
@@ -127,6 +128,17 @@ body.is-loading * {
 	  -webkit-animation: none !important;
 	  -ms-animation: none !important;
 	  animation: none !important;
+}
+
+code {
+  padding: 1em;
+  margin: 1ex 0;
+  background: #f7f7f7;
+  border: 1px solid #cfcfcf;
+  font-size: .9em;
+  display: block;
+  overflow: auto;
+  font-family: monospace;
 }
 
 input, textarea, select {

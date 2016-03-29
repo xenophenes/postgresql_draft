@@ -1,0 +1,331 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>PostgreSQL - Red Hat Packages</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/button.css" />
+	<link rel="stylesheet" href="../assets/css/containers.css" />
+	<link rel="stylesheet" href="../assets/css/copyright.css" />
+	<link rel="stylesheet" href="../assets/css/forms.css" />
+	<link rel="stylesheet" href="../assets/css/grid.css" />
+	<link rel="stylesheet" href="../assets/css/images.css" />
+	<link rel="stylesheet" href="../assets/css/jcarousel.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jcarousel.min.js"></script>
+	<script src="../assets/js/jcarousel-responsive.js"></script>
+</head>
+<body>
+	<div id="logo" style="display:none;">Postgresql</div>
+	<div id="page-wrapper">
+
+		<!-- Header -->
+
+		<nav id="nav">
+			<ul>
+				<li><span class="header"><img src="../images/Postgresql_elephant.svg" alt="" /></span></li>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../about/about.html">About</a></li>
+				<li class="current"><a href="../download/download.html">Download</a></li>
+				<li><a href="../documentation/documentation.html">Documentation</a></li>
+				<li><a href="../community/community.html">Community</a></li>
+				<li><a href="../support/support.html">Support</a></li>
+				<li><a href="../login/login.html">Login</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main-wrapper-about">
+			<div id="main" class="container">
+				<div class="row padding-left-mobile">
+					<div class="2u 12u(mobile)">
+						<div class="sidebar">
+
+							<!-- Sidebar -->
+
+							<!-- Related Links -->
+							<section>
+								<h2 class="major"><span>Quick Links</span></h2>
+								<ul class="about ul">
+									<li><a href="../download/download.html">Downloads</a></li>
+									<li><a href="../download/openbsd.html">FreeBSD</a></li>
+									<li><a href="../download/openbsd.html">OpenBSD</a></li>
+									<li><a href="../download/redhat.html">Red Hat</a></li>
+									<li><a href="../download/debian.html">Debian</a></li>
+									<li><a href="../download/ubuntu.html">Ubuntu</a></li>
+									<li><a href="../download/suse.html">OpenSUSE</a></li>
+									<li><a href="../download/other.html">Other Linux</a></li>
+									<li><a href="../download/mac.html">Mac OS X</a></li>
+									<li><a href="../download/solaris.html">Solaris</a></li>
+									<li><a href="../download/windows.html">Windows</a></li>
+								</ul>
+							</section>
+
+						</div>
+					</div>
+					<div class="10u 12u(mobile) important(mobile)">
+						<div class="content content-right">
+
+							<!-- Content -->
+
+							<article class="box page-content">
+
+								<header>
+									<h2>Red Hat Packages<span class="header images"><img src="../images/downloads.svg" alt="" /></span></h2>
+								</header>
+
+								<section>
+
+                  <p>
+                  The Red Hat family of distributions includes Red Hat Enterprise Linux,
+                  CentOS, Fedora, Scientific Linux, Oracle Linux and others.
+                  PostgreSQL is available on these platforms by default. However,
+                  each version of the platform normally "snapshots" a specific version of
+                  PostgreSQL that is then supported throughout the lifetime of this platform.
+                  Since this can often mean a different version than preferred, the PostgreSQL
+                  project provides a <a href="#yum">repository</a> of packages of all
+                  supported versions for the most common distributions.
+                  </p>
+
+                  <h3 class="major"><span>Included in distribution</span></h3>
+                  <p>
+                  These distributions all include PostgreSQL by default. To install
+                  PostgreSQL from these repositories, use the <i>yum</i> command:
+                  </p>
+                  <p>
+                  <code>
+                  yum install postgresql-server
+                  </code>
+                  </p>
+                  <p>
+                  Which version of PostgreSQL you get will depend on the version of
+                  the distribution:
+                  </p><div>
+                   <table border="0" cellpadding="0" cellspacing="0">
+                    <tbody><tr>
+                     <th><h3>Distribution</h3></th>
+                     <th><h3>Version</h3></th>
+                    </tr>
+                    <tr>
+                     <td>RHEL/CentOS/SL/OL 7</td>
+                     <td>9.2</td>
+                    </tr>
+                    <tr>
+                     <td>RHEL/CentOS/SL/OL 6</td>
+                     <td>8.4(also supplies package postgresql92)</td>
+                    </tr>
+                    <tr>
+                     <td>RHEL/CentOS/SL/OL 5</td>
+                     <td>8.1 (also supplies package postgresql84)</td>
+                    </tr>
+                    <tr>
+                     <td>Fedora 22</td>
+                     <td>9.4</td>
+                    </tr>
+                    <tr>
+                     <td>Fedora 21</td>
+                     <td>9.3</td>
+                    </tr>
+                    <tr>
+                     <td>Fedora 20</td>
+                     <td>9.3</td>
+                    </tr>
+                   </tbody></table>
+                  </div>
+                  Other Red Hat family distributions may ship a different version of
+                  PostgreSQL by default, check with your distribution vendor to be sure.
+                  <p></p>
+
+                  <p>
+                  The repository contains many different packages including third party
+                  addons. The most common and important packages are (substitute the
+                  version number as required):
+                  </p>
+                  <ul>
+                   <li>postgresql-client   libraries and client binaries</li>
+                   <li>postgresql-server   core database server</li>
+                   <li>postgresql-contrib  additional supplied modules</li>
+                   <li>postgresql-devel    libraries and headers for C language development</li>
+                   <li>pgadmin3 - pgAdmin III graphical administration utility</li>
+                  </ul>
+
+                  <h3 class="major"><span>Post-installation</span></h3>
+                  <p>
+                  Due to policies for Red Hat family distributions, the PostgreSQL installation
+                  will not be enabled for automatic start or have the database initialized
+                  automatically. To make your database installation complete, you need to
+                  perform these two steps:
+                  <code>
+                  service postgresql initdb<br>
+                  chkconfig postgresql on
+                  </code>
+                  </br>
+                  or, on Fedora 19 and other later derived distributions:<br>
+                  <code>
+                  postgresql-setup initdb<br>
+                  systemctl enable postgresql.service
+                  </code>
+                  </p>
+
+                  <h3 class="major"><span>PostgreSQL Yum Repository</span></h3>
+                  <p>
+                  If the version supplied by your operating system is not the one you want,
+                  you can use the PostgreSQL Yum Repository. This repository will integrate
+                  with your normal systems and patch management, and provide automatic
+                  updates for all supported versions of PostgreSQL throughout the support
+                  <a href="/support/versioning/">lifetime</a> of PostgreSQL.
+                  </p>
+                  <p>
+                  The PostgreSQL yum repository currently supports Red Hat Enterprise Linux,
+                  CentOS, Oracle Enterprise Linux and Scientific Linux versions 5.x, 6.x, and 7.x,
+                  as well as current versions of Fedora. Note that due to the shorter support cycle
+                  on Fedora, all versions are not available on this platform, and we recommend not
+                  using Fedora for server deployments. All distributions are supported on both x86_64
+                  and i386 architectures.
+                  </p>
+                  <p>
+                  To use the yum repository, you must first install the <i>repository RPM</i>.
+                  To do this, download the correct RPM from the
+                  <a href="http://yum.postgresql.org/repopackages.php">repository RPM listing</a>,
+                  and install it with commands like:
+                  </p>
+                  <p>
+                  <code>
+                  yum install http://yum.postgresql.org/9.4/redhat/rhel-6-x86_64/pgdg-redhat94-9.4-1.noarch.rpm
+                  </code>
+                  </p>
+                  <p>
+                  Once this is done, you can proceed to install and update packages the
+                  same way as the ones included in the distribution.
+                  </p>
+                  <p>
+                  <code>
+                  yum install postgresql94-server postgresql94-contrib<br>
+                  service postgresql-9.4 initdb<br>
+                  chkconfig postgresql-9.4 on
+                  </code>
+                  </br>
+                  or, on Fedora 19 and other later derived distributions:<br>
+                  <code>
+                  yum install postgresql94-server postgresql94-contrib<br>
+                  /usr/pgsql-9.4/bin/postgresql94-setup initdb<br>
+                  systemctl enable postgresql-9.4.service<br>
+                  systemctl start postgresql-9.4.service
+                  </code>
+                  </p>
+                  <p>
+                  Package names in the
+                  PostgreSQL yum repository follows the same standard as the ones included
+                  in the main repositories, but include the version number, such as:
+                  </p>
+                  <ul>
+                   <li>postgresql94</li>
+                   <li>postgresql94-server</li>
+                   <li>postgresql94-contrib</li>
+                   <li>pgadmin3_94</li>
+                  </ul>
+
+                  <h3 class="major"><span>Direct RPM download</span></h3>
+                  <p>
+                  If you cannot, or do not want to, use the yum based installation method,
+                  all the RPMs that are in the yum repository are available for
+                  <a href="http://yum.postgresql.org/rpmchart.php">direct download</a>
+                  and manual installation as well.
+                  </p>
+
+                  <h3 class="major"><span>Cross distribution packages</span></h3>
+                  <p>
+                  Generic RPM and DEB packages that provide a server-only distribution
+                  are avaliable for some 32 and 64-bit Linux distributions.  These
+                  packages provide a single set of binaries and consistent packaging
+                  across different Linux distributions.  They are designed for server
+                  installation where a GUI is not available and consistency across
+                  multiple distributions is a requirement.
+                  </p>
+                  <p>
+                  <a href="http://www.openscg.com/se/postgresql/packages.jsp">Download</a>
+                  the packages from OpenSCG for all supported versions.
+                  </p>
+
+                  <p>
+                  <i>Note:</i> The cross distribution packages do not fully integrate with
+                  the platform-specific packaging systems.
+                  </p>
+
+
+                  <h3 class="major"><span>Graphical installer</span></h3>
+                  <p>
+                  Installers are available for 32 and 64-bit Linux distributions
+                  and include PostgreSQL, pgAdmin and the StackBuilder utility for installation
+                  of additional packages.
+                  </p>
+                  <p>
+                  <a href="http://www.enterprisedb.com/products/pgdownload.do">Download</a>
+                  the installer from EnterpriseDB for all supported versions.
+                  </p>
+
+                  <p>
+                  <i>Note:</i> The installers do not integrate with
+                  platform-specific packaging systems.
+                  </p>
+
+
+                  <h3 class="major"><span>Build from source</span></h3>
+                  <p>
+                  The source code can be found in the main <a href="/ftp/source">file browser</a>.
+                  Instructions for building from source can be found in the
+                  <a href="/docs/current/static/installation.html">documentation</a>.
+                  </p>
+
+                </section>
+              </article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer" class="container">
+			<div class="row 200%">
+				<div class="12u">
+
+					<!-- CONTACT -->
+					<section>
+						<h2 class="major"><span>Connect with the PostgreSQL Community</span></h2>
+						<ul class="contact">
+							<li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
+							<li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+							<li><a class="icon fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+							<li><a class="icon fa-github" href="#"><span class="label">GitHub</span></a></li>
+							<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
+						</ul>
+					</section>
+					<!-- END CONTACT -->
+				</div>
+			</div>
+
+			<!-- Copyright -->
+			<div id="copyright">
+				<ul class="menu">
+					<li>© Copyright © 1996-2015 The PostgreSQL Global Development Group</li>
+				</ul>
+			</div>
+
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.dropotron.min.js"></script>
+	<script src="../assets/js/skel.min.js"></script>
+	<script src="../assets/js/skel-viewport.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="../assets/js/main.js"></script>
+</body>
+</html>
