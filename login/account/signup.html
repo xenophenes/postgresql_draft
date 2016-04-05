@@ -2,22 +2,22 @@
 
 <html>
 <head>
-	<title>PostgreSQL - Login</title>
+	<title>PostgreSQL - New Account</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
-	<link rel="stylesheet" href="../assets/css/main.css" />
-	<link rel="stylesheet" href="../assets/css/button.css" />
-	<link rel="stylesheet" href="../assets/css/containers.css" />
-	<link rel="stylesheet" href="../assets/css/copyright.css" />
-	<link rel="stylesheet" href="../assets/css/forms.css" />
-	<link rel="stylesheet" href="../assets/css/grid.css" />
-	<link rel="stylesheet" href="../assets/css/images.css" />
-	<link rel="stylesheet" href="../assets/css/jcarousel.css" />
-	<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
-	<script src="../assets/js/jquery.min.js"></script>
-	<script src="../assets/js/jcarousel.min.js"></script>
-	<script src="../assets/js/jcarousel-responsive.js"></script>
+	<!--[if lte IE 8]><script src="../../assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="../../assets/css/main.css" />
+	<link rel="stylesheet" href="../../assets/css/button.css" />
+	<link rel="stylesheet" href="../../assets/css/containers.css" />
+	<link rel="stylesheet" href="../../assets/css/copyright.css" />
+	<link rel="stylesheet" href="../../assets/css/forms.css" />
+	<link rel="stylesheet" href="../../assets/css/grid.css" />
+	<link rel="stylesheet" href="../../assets/css/images.css" />
+	<link rel="stylesheet" href="../../assets/css/jcarousel.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="../../assets/css/ie8.css" /><![endif]-->
+	<script src="../../assets/js/jquery.min.js"></script>
+	<script src="../../assets/js/jcarousel.min.js"></script>
+	<script src="../../assets/js/jcarousel-responsive.js"></script>
 </head>
 <body>
 	<div id="logo" style="display:none;">Postgresql</div>
@@ -27,14 +27,14 @@
 
 		<nav id="nav">
 			<ul>
-				<li><span class="header"><img src="../images/Postgresql_elephant.svg" alt="" /></span></li>
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="../about/about.html">About</a></li>
-				<li><a href="../download/download.html">Download</a></li>
-				<li><a href="../documentation/documentation.html">Documentation</a></li>
-				<li><a href="../community/community.html">Community</a></li>
-				<li><a href="../support/support.html">Support</a></li>
-				<li class="current"><a href="../login/login.html">Login</a></li>
+				<li><span class="header"><img src="../../images/Postgresql_elephant.svg" alt="" /></span></li>
+				<li><a href="../../index.html">Home</a></li>
+				<li><a href="../../about/about.html">About</a></li>
+				<li><a href="../../download/download.html">Download</a></li>
+				<li><a href="../../documentation/documentation.html">Documentation</a></li>
+				<li><a href="../../community/community.html">Community</a></li>
+				<li><a href="../../support/support.html">Support</a></li>
+				<li class="current"><a href="../../login/login.html">Login</a></li>
 			</ul>
 		</nav>
 
@@ -53,15 +53,15 @@
 							<article class="box page-content">
 
 								<header>
-									<h2>Login <span class="header images"><img src="../images/login.svg" alt="" /></span></h2>
+									<h2>New Account <span class="header images"><img src="../../images/login.svg" alt="" /></span></h2>
 								</header>
 
 								<section>
 
                   <p>
-	                  Please login to access your community account.</br>
-										<a href="./account/signup.html"><b>Don't have an account? </b>Sign up</a> for your PostgreSQL community account.</br>
-										<a href="./account/reset.html"><b>Forgot your password? </b></a>Use the <a href="./account/reset.html">password reset</a> form.
+										To sign up for a free community account, enter your preferred userid and email address.
+										Note that a community account is only needed if you want to submit information - all content is
+										available for reading without an account.
                   </p>
 
 	                <form action="login" name="login" method="POST">
@@ -76,17 +76,49 @@
 													</div>
 												</div>
 												<div class="row">
-													<div class="2u passwordInput">
-														<h3>Password</h3>
+													<div class="2u nameInput">
+														<h3>First Name</h3>
 													</div>
 													<div class="10u">
-														<input type="password" name="password" class="styledInput" />
+														<input type="name" name="name" class="styledInput" />
+													</div>
+												</div>
+												<div class="row">
+													<div class="2u nameInput">
+														<h3>Last Name</h3>
+													</div>
+													<div class="10u">
+														<input type="name" name="name" class="styledInput" />
+													</div>
+												</div>
+												<div class="row">
+													<div class="2u emailInput">
+														<h3>Email Address</h3>
+													</div>
+													<div class="10u">
+														<input type="text" name="email" class="styledInput" />
+													</div>
+												</div>
+												<div class="row">
+													<div class="2u emailInput">
+														<h3>Email Address</h3>
+													</div>
+													<div class="10u">
+														<input type="text" name="email" class="styledInput" />
+													</div>
+												</div>
+												<div class="row">
+													<div class="2u captchaInput">
+														<h3>Captcha</h3>
+													</div>
+													<div class="10u">
+														insert captcha
 													</div>
 												</div>
 												<div class="row 50%">
 													<div class="9u"></div>
 													<div class="3u">
-														<input type="submit" value="Submit" class="loginSubmit"/>
+														<input type="submit" value="Sign Up" class="loginSubmit"/>
 													</div>
 												</div>
 											</div>
@@ -132,11 +164,11 @@
 	</div>
 
 	<!-- Scripts -->
-	<script src="../assets/js/jquery.dropotron.min.js"></script>
-	<script src="../assets/js/skel.min.js"></script>
-	<script src="../assets/js/skel-viewport.min.js"></script>
-	<script src="../assets/js/util.js"></script>
-	<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
-	<script src="../assets/js/main.js"></script>
+	<script src="../../assets/js/jquery.dropotron.min.js"></script>
+	<script src="../../assets/js/skel.min.js"></script>
+	<script src="../../assets/js/skel-viewport.min.js"></script>
+	<script src="../../assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="../../assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="../../assets/js/main.js"></script>
 </body>
 </html>
