@@ -166,9 +166,9 @@ input[type="submit"],
 input[type="reset"],
 button,
 .button.planetPostgresql {
-    font-size: 1.5em;
+    font-size: 1.3em;
     width: 100%;
-    padding: 0.75em 0 0.75em 0;
+    padding: 10px;
     margin-top: -.12em;
     text-align: center;
 }
