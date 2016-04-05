@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title>PostgreSQL - Login</title>
+	<title>PostgreSQL - IRC</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -32,9 +32,9 @@
 				<li><a href="../about/about.html">About</a></li>
 				<li><a href="../download/download.html">Download</a></li>
 				<li><a href="../documentation/documentation.html">Documentation</a></li>
-				<li><a href="../community/community.html">Community</a></li>
+				<li class="current"><a href="../community/community.html">Community</a></li>
 				<li><a href="../support/support.html">Support</a></li>
-				<li class="current"><a href="../login/login.html">Login</a></li>
+				<li><a href="../login/login.html">Login</a></li>
 			</ul>
 		</nav>
 
@@ -43,57 +43,64 @@
 			<div id="main" class="container">
 				<div class="row padding-left-mobile">
 					<div class="2u 12u(mobile)">
+						<div class="sidebar">
 
+							<!-- Sidebar -->
+
+							<!-- Related Links -->
+							<section>
+								<h2 class="major"><span>Quick Links</span></h2>
+								<ul class="about ul">
+									<li><a href="../community/community.html">Community</a></li>
+									<li><a href="../community/contributors.html">Contributors</a></li>
+									<li><a href="../community/mailinglists.html">Mailing Lists</a></li>
+									<li><a href="../community/irc.html">IRC</a></li>
+									<li><a href="../community/groups.html">User/International Groups</a></li>
+									<li><a href="../community/marketing.html">Marketing</a></li>
+									<li><a href="../community/development.html">Development Resources</a></li>
+								</ul>
+							</section>
+
+						</div>
 					</div>
 					<div class="10u 12u(mobile) important(mobile)">
-						<div class="content content-centered">
+						<div class="content content-right">
 
 							<!-- Content -->
 
 							<article class="box page-content">
 
 								<header>
-									<h2>Login <span class="header images"><img src="../images/login.svg" alt="" /></span></h2>
+									<h2>IRC <span class="header images"><img src="../images/irc.svg" alt="" /></span></h2>
 								</header>
 
-								<section>
+                <section>
+                  <p>If you have a problem that you cannot resolve, you might want to try asking a question in our IRC channel
+                  <a href="irc://irc.freenode.net/postgresql">#postgresql on irc.freenode.net</a>. The channel has many active users,
+                  and it is an entry into participating in the wider PostgreSQL community.  Don't forget to consult
+                  the <a href="../documentation">documentation</a> about your problem before asking your question.</p>
 
-                  <p>
-	                  Please login to access your community account.</br>
-										<a href="./account/signup.html"><b>Don't have an account? </b>Sign up</a> for your PostgreSQL community account.</br>
-										<a href="./account/reset.html"><b>Forgot your password? </b></a>Use the <a href="./account/reset.html">password reset</a> form.
-                  </p>
+                  <h3 class="major"><span>Language Specific Channels</span></h3>
+                  <ul>
+                    <li><a href="irc://irc.freenode.net/postgresql-br">Brazilian Portuguese</a></li>
+                    <li><a href="irc://irc.freenode.net/postgresqlfr">French</a></li>
+                    <li><a href="irc://irc.freenode.net/postgresql-it">Italian</a></li>
+                    <li><a href="irc://irc.freenode.net/postgresql-es">Spanish</a></li>
+                    <li><a href="irc://irc.freenode.net/postgresql-de">German</a></li>
+                    <li><a href="irc://irc.freenode.net/postgresql-tr">Turkish</a></li>
+                  </ul>
 
-	                <form action="login" name="login" method="POST">
-	                  <section>
-											<div class="coloralt 12u">
-												<div class="row">
-													<div class="2u usernameInput">
-														<h3>Username</h3>
-													</div>
-													<div class="10u">
-														<input type="text" name="username" class="styledInput" />
-													</div>
-												</div>
-												<div class="row">
-													<div class="2u passwordInput">
-														<h3>Password</h3>
-													</div>
-													<div class="10u">
-														<input type="password" name="password" class="styledInput" />
-													</div>
-												</div>
-												<div class="row 50%">
-													<div class="9u"></div>
-													<div class="3u">
-														<input type="submit" value="Submit" class="loginSubmit"/>
-													</div>
-												</div>
-											</div>
-										</section>
-									</form>
+								  <h3 class="major"><span>Other PostgreSQL Related Projects</span></h3>
+                  <ul>
+                  	<li><a href="irc://irc.freenode.net/pgadmin">pgAdmin</a> - Cross platform graphical administration</li>
+                  	<li><a href="irc://irc.freenode.net/plphp">PLphp</a> - Procedures and Functions in PHP</li>
+                  	<li><a href="irc://irc.freenode.net/postgis">PostGIS</a> -  Spatial objects for PostgreSQL</li>
+                  	<li><a href="irc://irc.freenode.net/slony">Slony</a> - FOSS PostgreSQL replication</li>
+                  	<li><a href="irc://irc.freenode.net/postgresql-eu">postgresql-eu</a> - European PostgreSQL Usergroup</li>
+                  </ul>
                 </section>
-              </article>
+
+							</article>
 						</div>
 					</div>
 				</div>
