@@ -65,6 +65,15 @@ table, th, td {
     border: 1px solid #cfcfcf;
 }
 
+td.fm_yes {
+  background-color: #b8d1f3;
+  border: 1px solid #fcfcfc;
+}
+
+td.fm_no {
+  background-color: #dae5f4;
+}
+
 body {
     -webkit-text-size-adjust: none;
 }
